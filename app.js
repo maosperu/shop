@@ -944,17 +944,6 @@ function renderProducts() {
           <div class="product-price-row">
             <span class="product-price">${formatPrice(product.pricePEN, product.priceUSD)}</span>
           </div>
-
-          <div class="product-actions">
-            <button class="btn-add-cart" id="btn-add-${product.id}" onclick="addToCart('${product.id}')">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <path d="M16 10a4 4 0 0 1-8 0"></path>
-              </svg>
-              <span>Añadir al Carrito</span>
-            </button>
-          </div>
         </div>
       </article>
     `;
@@ -1124,21 +1113,22 @@ function updateCartUI() {
         <img src="${item.image}" alt="${item.name}" />
       </div>
       <div class="cart-item-info">
-        <div class="cart-item-header-row">
-          <div>
-            <span class="cart-item-brand">${item.brand}</span>
-            <h4>${item.name}</h4>
-          </div>
-          <span class="cart-item-price">${formatPrice(pen * qty, usd * qty)}</span>
-        </div>
+        <span class="cart-item-brand">${item.brand}</span>
+        <h4>${item.name}</h4>
+        <div class="cart-item-price">${formatPrice(pen * qty, usd * qty)}</div>
         <div class="cart-item-controls-row">
           <div class="cart-qty-ctrl">
             <button class="cart-qty-btn" onclick="updateCartQty('${item.id}', -1)" aria-label="Disminuir">−</button>
             <span class="cart-qty-val">${qty}</span>
             <button class="cart-qty-btn" onclick="updateCartQty('${item.id}', 1)" aria-label="Aumentar">+</button>
           </div>
-          <button class="cart-item-delete-btn" onclick="removeCartItem('${item.id}')" aria-label="Eliminar">
-            🗑️ Eliminar
+          <button class="cart-item-delete" onclick="removeCartItem('${item.id}')" aria-label="Eliminar producto del carrito" title="Eliminar">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="3 6 5 6 21 6"></polyline>
+              <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+              <line x1="10" y1="11" x2="10" y2="17"></line>
+              <line x1="14" y1="11" x2="14" y2="17"></line>
+            </svg>
           </button>
         </div>
       </div>
@@ -1182,19 +1172,33 @@ function openQuickView(productId) {
   const content = document.getElementById('quickViewBody');
   if (!modal || !content) return;
 
+  const starSvg = `<svg width="15" height="15" viewBox="0 0 20 20" fill="#f59e0b" style="display:inline-block; vertical-align:middle;"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>`;
+
   content.innerHTML = `
     <div class="quickview-gallery">
-      <img src="${product.image}" alt="${product.name}" />
+      <div class="quickview-img-wrapper">
+        <img src="${product.image}" alt="${product.name}" />
+      </div>
     </div>
     <div class="quickview-details">
-      <span class="quickview-brand">${product.brand}</span>
+      <div class="quickview-top-badges">
+        <span class="qv-badge-brand">${product.brand}</span>
+        <span class="qv-badge-verified">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          100% Original Seúl
+        </span>
+      </div>
+
       <h2 class="quickview-title">${product.name}</h2>
       
       <div class="quickview-meta">
-        <span class="rating-stars">★★★★★</span>
-        <span>${product.rating} (${product.reviewsCount} reseñas)</span>
-        <span>•</span>
-        <span>${product.volume}</span>
+        <div class="quickview-stars-row" aria-label="Calificación ${product.rating} de 5">
+          ${starSvg}${starSvg}${starSvg}${starSvg}${starSvg}
+        </div>
+        <span class="quickview-rating-num">${product.rating}</span>
+        <span class="quickview-reviews-count">(${product.reviewsCount} reseñas)</span>
+        <span class="quickview-meta-dot">•</span>
+        <span class="quickview-volume-tag">${product.volume}</span>
       </div>
 
       <div class="quickview-price" id="quickViewPriceDisplay">
@@ -1202,45 +1206,57 @@ function openQuickView(productId) {
       </div>
 
       <div class="quickview-target">
-        <strong>Objetivo Principal:</strong>
-        ${product.target}
+        <div class="qv-target-label">Objetivo de la fórmula</div>
+        <div class="qv-target-text">${product.target}</div>
       </div>
 
       <div class="quickview-ingredients">
-        <h4 class="quickview-ingredients-title">Ingredientes Clave Destacados:</h4>
+        <div class="quickview-ingredients-title">Ingredientes Clave Destacados:</div>
         <div class="ingredients-tags">
           ${product.keyIngredients.map(ing => `<span class="ing-tag">${ing}</span>`).join('')}
         </div>
       </div>
 
       <div class="quickview-howtouse">
-        <strong>Modo de Uso Sugerido:</strong>
+        <div class="quickview-howtouse-label">Modo de Uso Sugerido:</div>
         <p>${product.howToUse}</p>
       </div>
 
-      <!-- Quantity Selector in Quick View -->
-      <div class="quickview-qty-wrapper">
-        <span class="quickview-qty-label">Cantidad:</span>
-        <div class="cart-qty-ctrl">
-          <button class="cart-qty-btn" type="button" onclick="changeQuickViewQty(-1)" aria-label="Disminuir">−</button>
-          <span class="cart-qty-val" id="modalQtyVal">1</span>
-          <button class="cart-qty-btn" type="button" onclick="changeQuickViewQty(1)" aria-label="Aumentar">+</button>
+      <!-- Luxury Stable Purchase Panel (Zero Layout Shift) -->
+      <div class="quickview-purchase-card">
+        <div class="quickview-calc-row">
+          <div class="quickview-qty-group">
+            <span class="quickview-calc-label">Cantidad</span>
+            <div class="cart-qty-ctrl">
+              <button class="cart-qty-btn" type="button" onclick="changeQuickViewQty(-1)" aria-label="Disminuir cantidad">−</button>
+              <span class="cart-qty-val" id="modalQtyVal">1</span>
+              <button class="cart-qty-btn" type="button" onclick="changeQuickViewQty(1)" aria-label="Aumentar cantidad">+</button>
+            </div>
+          </div>
+          <div class="quickview-subtotal-group">
+            <span class="quickview-calc-label">Subtotal</span>
+            <span class="quickview-subtotal-amount" id="modalSubtotalHint">${formatPrice(product.pricePEN, product.priceUSD)}</span>
+          </div>
         </div>
-        <span class="quickview-subtotal-hint" id="modalSubtotalHint">Total: ${formatPrice(product.pricePEN, product.priceUSD)}</span>
-      </div>
 
-      <div class="quickview-actions">
-        <button class="btn-pill btn-pill-primary" style="flex: 1;" type="button" onclick="addFromQuickView()">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <path d="M16 10a4 4 0 0 1-8 0"></path>
-          </svg>
-          <span id="btnQuickViewAddText">Añadir al Carrito (1)</span>
-        </button>
-        <button class="btn-pill btn-pill-ghost" type="button" onclick="askAboutProductOnWhatsApp('${product.name}')">
-          Consultar por WhatsApp
-        </button>
+        <div class="quickview-actions">
+          <button class="btn-pill btn-pill-primary quickview-btn-add" type="button" onclick="addFromQuickView()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="btn-add-label">Añadir al Carrito</span>
+            <span class="btn-add-counter" id="btnQuickViewCounter">(1)</span>
+          </button>
+          <button class="btn-pill btn-pill-ghost quickview-btn-wa" type="button" onclick="askAboutProductOnWhatsApp('${product.name}')">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+              <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.17L2 22l4.982-1.402A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.2c-1.626 0-3.136-.502-4.385-1.362l-.314-.216-2.956.832.842-2.883-.235-.333A8.163 8.163 0 013.8 12c0-4.522 3.678-8.2 8.2-8.2 4.522 0 8.2 3.678 8.2 8.2 0 4.522-3.678 8.2-8.2 8.2z"/>
+            </svg>
+            <span>WhatsApp</span>
+          </button>
+        </div>
       </div>
     </div>
   `;
@@ -1254,16 +1270,16 @@ function changeQuickViewQty(delta) {
   currentQuickViewQty = Math.max(1, currentQuickViewQty + delta);
   
   const qtyValEl = document.getElementById('modalQtyVal');
-  const btnTextEl = document.getElementById('btnQuickViewAddText');
+  const counterEl = document.getElementById('btnQuickViewCounter');
   const subtotalHintEl = document.getElementById('modalSubtotalHint');
 
   if (qtyValEl) qtyValEl.textContent = currentQuickViewQty;
-  if (btnTextEl) btnTextEl.textContent = `Añadir al Carrito (${currentQuickViewQty})`;
+  if (counterEl) counterEl.textContent = `(${currentQuickViewQty})`;
 
   if (subtotalHintEl) {
     const pen = currentQuickViewProduct.pricePEN * currentQuickViewQty;
     const usd = currentQuickViewProduct.priceUSD * currentQuickViewQty;
-    subtotalHintEl.textContent = `Total: ${formatPrice(pen, usd)}`;
+    subtotalHintEl.textContent = formatPrice(pen, usd);
   }
 }
 
