@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda • Cosmética Coreana Original en Tacna, Perú | MAOS</title>
+  <meta name="description"
+    content="Explora el catálogo completo de cosmética coreana MAOS en Tacna: sérums, cremas, tónicos y limpieza de Dr. Althea, Anua, Haruharu Wonder, Arencia, Celimax y Mixsoon." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tienda MAOS • Skincare Coreano en Tacna, Perú" />
+  <meta property="og:description"
+    content="Catálogo curado de K-Beauty original en Tacna. Envíos gratis a partir de S/. 300 a todo el Perú." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/hero_lifestyle.jpg" />
+
+  <!-- Google Fonts & Stylesheet -->
+  <link rel="stylesheet" href="index.css?v=9" />
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+</head>
+
+<body>
+
+  <!-- TOP ANNOUNCEMENT BAR (From reference screenshot 1 & 2) -->
+  <div class="top-announcement-bar" id="announcementBar">
+    <button class="announcement-nav-btn" id="announcementPrev" aria-label="Anterior">←</button>
+    <div class="announcement-text-wrap">
+      <span class="announcement-text" id="announcementText">
+        Novedades: Cosmética Coreana 100% Original • Envíos gratis desde S/. 300
+      </span>
+    </div>
+    <button class="announcement-nav-btn" id="announcementNext" aria-label="Siguiente">→</button>
+  </div>
+
+  <!-- SITE HEADER (Desktop: 3 Options • Mobile: Screenshot 2, 3, 5) -->
+  <header class="site-header">
+    <div class="header-container">
+      <!-- Mobile Left Cluster: 2-line Minimalist Hamburger + Search (Screenshot 2, 3, 5) -->
+      <div class="header-left-cluster">
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" onclick="openMobileMenu()" aria-label="Abrir menú">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="4" y1="9" x2="20" y2="9"></line>
+            <line x1="4" y1="15" x2="20" y2="15"></line>
+          </svg>
+        </button>
+        <button class="header-search-icon-btn" onclick="document.getElementById('searchInput').focus();" title="Buscar productos" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Desktop Left Navigation: EXACTLY 3 OPTIONS (Inicio, Tienda, Test de rutina) -->
+      <nav class="nav-left" id="navLeft" aria-label="Navegación principal">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="tienda.html" class="nav-link active">Tienda</a>
+        <a href="#rutinas" class="nav-link" id="navRutinaLink" onclick="openQuiz(); return false;">Test de rutina</a>
+      </nav>
+
+      <!-- Center Brand Logo (Pure SVG "MAOS") -->
+      <div class="brand-center">
+        <a href="index.html" class="brand-logo-wrap" aria-label="MAOS Skincare Inicio">
+          <svg class="brand-logo-svg" viewBox="0 0 140 34" width="130" height="32" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <text x="50%" y="25" text-anchor="middle" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif"
+              font-size="26" font-weight="800" letter-spacing="0.22em">MAOS</text>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Right Utility Cluster -->
+      <div class="header-utilities">
+        <!-- Currency Toggle Switch (Soles ↔ USD) -->
+        <div class="currency-toggle" id="currencyToggle" title="Cambiar moneda" role="radiogroup"
+          aria-label="Seleccionar moneda">
+          <div class="currency-toggle-slider" id="currencySlider"></div>
+          <button class="currency-toggle-btn active" data-currency="PEN" role="radio" aria-checked="true">
+            <span class="currency-flag">🇵🇪</span> S/.
+          </button>
+          <button class="currency-toggle-btn" data-currency="USD" role="radio" aria-checked="false">
+            <span class="currency-flag">🇺🇸</span> $
+          </button>
+        </div>
+
+        <!-- Desktop Search button -->
+        <button class="icon-btn desktop-search-btn" onclick="document.getElementById('searchInput').focus();" title="Buscar productos" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Cart Trigger Button (Shopping bag icon) -->
+        <button class="icon-btn header-cart-btn" id="cartBtn" onclick="openCart()" title="Ver carrito" aria-label="Carrito">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE FULLSCREEN DRAWER (Inspired by A-dam Screenshot 1) -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay"></div>
+  <aside class="mobile-menu-drawer" id="mobileMenuDrawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <div class="mobile-drawer-left">
+        <button class="mobile-drawer-close-btn" id="mobileDrawerClose" aria-label="Cerrar menú">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+        <button class="mobile-drawer-search-btn" onclick="closeMobileMenu(); document.getElementById('searchInput').focus();" title="Buscar productos">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-drawer-brand">
+        <svg viewBox="0 0 140 34" width="110" height="26" fill="currentColor">
+          <text x="50%" y="24" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="24" font-weight="800" letter-spacing="0.22em">MAOS</text>
+        </svg>
+      </div>
+      <div class="mobile-drawer-right">
+        <button class="icon-btn" onclick="closeMobileMenu(); openCart();" aria-label="Carrito">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-badge mobile-menu-cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Big Bold Navigation Links (Screenshot 1: Shop, Campaigns, Over ons...) -->
+    <nav class="mobile-drawer-nav">
+      <a href="index.html" class="mobile-drawer-link">Inicio</a>
+      <a href="tienda.html" class="mobile-drawer-link active">Tienda</a>
+      <a href="#rutinas" class="mobile-drawer-link" onclick="closeMobileMenu(); openQuiz(); return false;">Test de rutina</a>
+    </nav>
+
+    <!-- Bottom Footer of Drawer (Screenshot 1) -->
+    <div class="mobile-drawer-footer">
+      <div class="mobile-drawer-socials">
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="mobile-social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+        <a href="https://tiktok.com" target="_blank" aria-label="TikTok" class="mobile-social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 3 15.68 6.34 6.34 0 0 0 9.34 22a6.34 6.34 0 0 0 6.34-6.34V9.05a8.21 8.21 0 0 0 4.91 1.64v-3.5a4.78 4.78 0 0 1-1-.5z"/></svg>
+        </a>
+        <a href="https://wa.me/51908794517" target="_blank" aria-label="WhatsApp" class="mobile-social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.087.087-.177.182-.076.356.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-10.416c-5.632 0-10.21 4.578-10.21 10.209 0 1.802.47 3.558 1.365 5.109l-1.455 5.314 5.457-1.432c1.488.812 3.167 1.24 4.843 1.241 5.631 0 10.21-4.578 10.21-10.209 0-5.631-4.579-10.231-10.21-10.231z"/></svg>
+        </a>
+      </div>
+      
+      <div class="mobile-drawer-bottom-bar">
+        <div class="mobile-currency-select-wrap">
+          <span id="mobileCurrencyFlag">🇵🇪</span>
+          <select id="mobileCurrencySelect" aria-label="Cambiar moneda">
+            <option value="PEN" selected>Soles (S/.)</option>
+            <option value="USD">USD ($)</option>
+          </select>
+        </div>
+        <a href="https://wa.me/51908794517" target="_blank" class="mobile-drawer-whatsapp-link">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.087.087-.177.182-.076.356.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-10.416c-5.632 0-10.21 4.578-10.21 10.209 0 1.802.47 3.558 1.365 5.109l-1.455 5.314 5.457-1.432c1.488.812 3.167 1.24 4.843 1.241 5.631 0 10.21-4.578 10.21-10.209 0-5.631-4.579-10.231-10.21-10.231z"/>
+          </svg>
+          <span>Asesoría Tacna</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- PAGE HERO BANNER -->
+    <section class="catalog-page-hero">
+      <div class="container">
+        <div class="catalog-page-hero-inner">
+          <span class="editorial-eyebrow">CATÁLOGO 100% ORIGINAL • TACNA & PERÚ</span>
+          <h1 class="catalog-hero-title">Tienda de Cosmética Coreana</h1>
+          <p class="catalog-hero-desc">
+            Fórmulas auténticas importadas de Seúl para cuidar tu piel con honestidad y eficacia. Entregas en Tacna y envíos seguros a todo el Perú.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT CATALOG SECTION -->
+    <section class="catalog-section" id="catalogo">
+      <div class="container">
+        <div class="catalog-header">
+          <div class="catalog-top-bar">
+            <div class="catalog-title-group">
+              <h2 style="font-size: 24px;">Todos los Productos</h2>
+              <p id="productsCount">14 productos disponibles</p>
+            </div>
+          </div>
+
+          <!-- Clean Luxury Filter Toolbar (Zero Button Overload) -->
+          <div class="catalog-filter-bar">
+            <!-- Search Input -->
+            <div class="search-input-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="text" id="searchInput" placeholder="Buscar por producto, activo, marca..."
+                aria-label="Buscar producto" />
+              <button class="search-clear-btn" id="searchClearBtn" aria-label="Limpiar búsqueda" style="display: none;">
+                &times;
+              </button>
+            </div>
+
+            <!-- Category Select Dropdown -->
+            <div class="filter-select-wrapper">
+              <select class="filter-select-pill" id="categorySelect" aria-label="Filtrar por categoría">
+                <option value="all">Categoría: Todas (14)</option>
+                <option value="serums">Sérums & Tratamientos</option>
+                <option value="cremas">Cremas & Hidratantes</option>
+                <option value="retinoides">Retinoides & Poros</option>
+                <option value="vitamin-c">Vitamina C & Glow</option>
+                <option value="limpieza">Doble Limpieza Facial</option>
+                <option value="sets">Sets Especiales</option>
+                <option value="brumas">Brumas & Tónicos</option>
+              </select>
+            </div>
+
+            <!-- Brand Select Dropdown -->
+            <div class="filter-select-wrapper">
+              <select class="filter-select-pill" id="brandSelect" aria-label="Filtrar por marca">
+                <option value="all">Marca: Todas las Marcas</option>
+                <option value="Anua">Anua</option>
+                <option value="Dr. Althea">Dr. Althea</option>
+                <option value="Haruharu WONDER">Haruharu WONDER</option>
+                <option value="Arencia">Arencia</option>
+                <option value="CELIMAX">CELIMAX</option>
+                <option value="mixsoon">mixsoon</option>
+              </select>
+            </div>
+
+            <!-- Skin Concern / Objective Dropdown -->
+            <div class="filter-select-wrapper">
+              <select class="filter-select-pill" id="concernSelect" aria-label="Filtrar por objetivo de piel">
+                <option value="all">Objetivo: Todos</option>
+                <option value="manchas">✨ Manchas & Tono Radiante</option>
+                <option value="rojeces">🌱 Rojeces & Piel Calma</option>
+                <option value="antiedad">⏳ Antiedad & Firmeza</option>
+                <option value="hidratacion">💧 Hidratación Profunda</option>
+                <option value="limpieza">🫧 Doble Limpieza & Poros</option>
+                <option value="barrera">🛡️ Reparación de Barrera</option>
+              </select>
+            </div>
+
+            <!-- Sort Select Dropdown -->
+            <div class="filter-select-wrapper">
+              <select class="sort-select-pill" id="sortSelect" aria-label="Ordenar productos">
+                <option value="featured">Destacados & Bestsellers</option>
+                <option value="price-asc">Precio: Menor a Mayor</option>
+                <option value="price-desc">Precio: Mayor a Menor</option>
+                <option value="rating">Mejor Calificados ★</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Active Filter Indicator / Badges -->
+          <div class="active-filters-bar" id="activeFiltersBar" style="display: none;">
+            <span class="active-filters-label">Filtros activos:</span>
+            <div class="active-filters-chips" id="activeFiltersChips"></div>
+            <button class="btn-clear-all-filters" id="btnClearAllFilters">Limpiar filtros</button>
+          </div>
+        </div>
+
+        <!-- Products Grid (Flat cards, 0px radius, shadowless) -->
+        <div class="products-grid" id="productsGrid" aria-live="polite">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ROUTINE QUIZ TEASER -->
+    <section class="routine-quiz-teaser">
+      <div class="container">
+        <div class="quiz-teaser-card">
+          <div class="quiz-teaser-content">
+            <div class="quiz-teaser-icon">✦</div>
+            <div class="quiz-teaser-info">
+              <strong>¿No sabes qué producto elegir para tu tipo de piel?</strong>
+              <span>Responde 2 preguntas y obtén tu rutina K-Beauty personalizada al instante.</span>
+            </div>
+          </div>
+          <button class="btn-pill btn-pill-primary btn-pill-sm" id="startQuizBtn">
+            Iniciar Test de Piel
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- QUICK VIEW MODAL (Includes Quantity Selector & Add to Cart) -->
+  <div class="modal-backdrop" id="quickViewModal" aria-hidden="true">
+    <div class="quickview-card" role="dialog" aria-modal="true">
+      <button class="modal-close-btn" id="quickViewClose" aria-label="Cerrar modal">✕</button>
+      <div id="quickViewBody" style="display: contents;">
+        <!-- Injected by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ROUTINE QUIZ MODAL -->
+  <div class="modal-backdrop" id="quizModal" aria-hidden="true">
+    <div class="quiz-card" role="dialog" aria-modal="true">
+      <button class="modal-close-btn" id="quizClose" aria-label="Cerrar test">✕</button>
+
+      <!-- Step 1 -->
+      <div class="quiz-step active" id="quizStep1">
+        <h3>Paso 1: ¿Cómo describirías tu piel?</h3>
+        <p class="subtitle">Selecciona la opción que mejor represente tu estado diario:</p>
+        <div class="quiz-options-grid">
+          <button class="quiz-opt-btn" onclick="selectQuizType('grasa')">
+            <strong>Mixta a Grasa</strong>
+            <span>Brillo en zona T, tendencia a poros dilatados y puntos negros.</span>
+          </button>
+          <button class="quiz-opt-btn" onclick="selectQuizType('seca')">
+            <strong>Seca a Deshidratada</strong>
+            <span>Sensación tirante, falta de luminosidad y textura áspera.</span>
+          </button>
+          <button class="quiz-opt-btn" onclick="selectQuizType('sensible')">
+            <strong>Sensible / Reactiva</strong>
+            <span>Se enrojece con facilidad, picor o intolerancia a fórmulas pesadas.</span>
+          </button>
+          <button class="quiz-opt-btn" onclick="selectQuizType('normal')">
+            <strong>Equilibrada / Normal</strong>
+            <span>Busca mantener hidratación y prevenir los signos de la edad.</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="quiz-step" id="quizStep2">
+        <h3>Paso 2: ¿Cuál es tu objetivo prioritario?</h3>
+        <p class="subtitle">¿Qué te gustaría transformar o mejorar primero en tu piel?</p>
+        <div class="quiz-options-grid">
+          <button class="quiz-opt-btn" onclick="selectQuizGoal('manchas')">
+            <strong>Atenuar Manchas & Tono</strong>
+            <span>Manchas de sol o marcas post-acné oscuras.</span>
+          </button>
+          <button class="quiz-opt-btn" onclick="selectQuizGoal('rojeces')">
+            <strong>Calmar Rojeces & Brotes</strong>
+            <span>Alivio inmediato de inflamación y rojeces reactivas.</span>
+          </button>
+          <button class="quiz-opt-btn" onclick="selectQuizGoal('antiedad')">
+            <strong>Firmeza, Poros & Líneas</strong>
+            <span>Retinoides, elasticidad y textura ultra suave.</span>
+          </button>
+          <button class="quiz-opt-btn" onclick="selectQuizGoal('hidratacion')">
+            <strong>Efecto Glass Skin / Hidratación</strong>
+            <span>Aspecto jugoso, barrera fuerte y resplandor natural.</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 3: Recommendations -->
+      <div class="quiz-step" id="quizStep3">
+        <h3>¡Tu Diagnóstico de Belleza está Listo!</h3>
+        <p class="subtitle">Fórmulas seleccionadas para sincronizar con tus necesidades:</p>
+        <div id="quizResultsContainer">
+          <!-- Injected dynamically -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE-OUT CART DRAWER (Inspired by Screenshot 4) -->
+  <div class="cart-drawer-backdrop" id="cartDrawerBackdrop" aria-hidden="true">
+    <div class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cartDrawerTitle">
+      <div class="cart-drawer-header">
+        <button class="cart-drawer-round-close" id="cartCloseBtn" aria-label="Cerrar carrito">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+        <div class="cart-drawer-title-wrap">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <h3 class="cart-drawer-title" id="cartDrawerTitle">
+            Tu Carrito <span id="cartHeaderCount">(0)</span>
+          </h3>
+        </div>
+      </div>
+
+      <!-- Free Shipping Meter (Threshold: S/. 300) -->
+      <div class="cart-shipping-meter">
+        <div class="shipping-meter-text" id="cartShippingStatus">
+          Te faltan <strong>S/. 300</strong> para obtener <strong>ENVÍO GRATIS</strong>
+        </div>
+        <div class="shipping-progress-track">
+          <div class="shipping-progress-bar" id="cartShippingBar"></div>
+        </div>
+      </div>
+
+      <!-- Items List -->
+      <div class="cart-items-container" id="cartItemsList">
+        <!-- Injected by app.js -->
+      </div>
+
+      <!-- Cart Drawer Footer (Screenshot 4) -->
+      <div class="cart-drawer-footer">
+        <div class="cart-summary-total-row">
+          <span class="cart-total-label">TOTAL</span>
+          <span class="cart-total-value" id="cartTotal">S/. 0</span>
+        </div>
+
+        <div class="cart-footer-actions">
+          <button class="btn-whatsapp-checkout" id="btnWhatsAppCheckout">
+            Finalizar Pedido por WhatsApp
+          </button>
+        </div>
+        <p class="cart-checkout-disclaimer">
+          Precios en Soles (o USD) • Envíos a todo el Perú desde Tacna
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP CHAT BUTTON (+51 908794517) -->
+  <button class="whatsapp-widget" id="whatsappWidget" aria-label="Chatear con MAOS en WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path
+        d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.087.087-.177.182-.076.356.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-10.416c-5.632 0-10.21 4.578-10.21 10.209 0 1.802.47 3.558 1.365 5.109l-1.455 5.314 5.457-1.432c1.488.812 3.167 1.24 4.843 1.241 5.631 0 10.21-4.578 10.21-10.209 0-5.631-4.579-10.231-10.21-10.231z" />
+    </svg>
+    <span>¿Dudas?</span>
+  </button>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <svg class="footer-logo-svg" viewBox="0 0 140 34" width="120" height="28" fill="var(--color-midcurrent-navy)"
+            xmlns="http://www.w3.org/2000/svg">
+            <text x="50%" y="25" text-anchor="middle" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif"
+              font-size="26" font-weight="800" letter-spacing="0.22em">MAOS</text>
+          </svg>
+          <p>
+            Curaduría especializada de cosmética coreana original en Tacna, Perú. Fórmulas botánicas y de laboratorio directamente a tu puerta.
+          </p>
+        </div>
+
+        <!-- Links: Navegación -->
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tienda.html">Tienda Completa</a></li>
+            <li><a href="marcas.html">Marcas Coreanas</a></li>
+            <li><a href="bestsellers.html">Bestsellers Virales</a></li>
+            <li><a href="preguntas.html">Preguntas & Envíos</a></li>
+          </ul>
+        </div>
+
+        <!-- Links: Marcas -->
+        <div class="footer-col">
+          <h4>Marcas Curadas</h4>
+          <ul>
+            <li><a href="tienda.html" onclick="sessionStorage.setItem('filterBrand','Dr. Althea');">Dr. Althea</a></li>
+            <li><a href="tienda.html" onclick="sessionStorage.setItem('filterBrand','Anua');">Anua Skincare</a></li>
+            <li><a href="tienda.html" onclick="sessionStorage.setItem('filterBrand','Haruharu WONDER');">Haruharu WONDER</a></li>
+            <li><a href="tienda.html" onclick="sessionStorage.setItem('filterBrand','Arencia');">Arencia</a></li>
+            <li><a href="tienda.html" onclick="sessionStorage.setItem('filterBrand','mixsoon');">mixsoon</a></li>
+            <li><a href="tienda.html" onclick="sessionStorage.setItem('filterBrand','CELIMAX');">CELIMAX</a></li>
+          </ul>
+        </div>
+
+        <!-- Location, WhatsApp & Deliveries in Tacna, Perú -->
+        <div class="footer-col">
+          <h4>Ubicación & Contacto</h4>
+          <p style="font-size: 13.5px; color: var(--color-slate-gray); margin-bottom: 10px; line-height: 1.5;">
+            📍 <strong>Tacna, Perú</strong><br />
+            Entregas locales en Tacna y envíos seguros a todo el Perú (Shalom & Olva Courier).
+          </p>
+          <p style="font-size: 13.5px; color: var(--color-slate-gray); margin-bottom: 14px;">
+            📱 <strong>WhatsApp Oficial:</strong><br />
+            <a href="https://wa.me/51908794517" target="_blank"
+              style="color: var(--color-deep-cobalt); font-weight: 800; font-size: 15px;">
+              +51 908 794 517
+            </a>
+          </p>
+          <button class="btn-pill btn-pill-primary btn-pill-sm"
+            onclick="openWhatsAppDirect('¡Hola Maos Tacna! Deseo hacer una consulta.')">
+            Chatear por WhatsApp
+          </button>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-row">
+        <div>
+          © 2026 MAOS Beauty • Selfcare • Lifestyle. Tacna, Perú. Todos los derechos reservados.
+        </div>
+        <div class="footer-payment-badges">
+          <span class="pay-badge">Yape</span>
+          <span class="pay-badge">Plin</span>
+          <span class="pay-badge">BCP</span>
+          <span class="pay-badge">BBVA</span>
+          <span class="pay-badge">Interbank</span>
+          <span class="pay-badge">Shalom / Olva</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js?v=9"></script>
+</body>
+
+</html>

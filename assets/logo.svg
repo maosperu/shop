@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" width="160" height="40" fill="none">
+  <style>
+    .brand-title {
+      font-family: 'Outfit', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: 0.22em;
+      fill: #29170e;
+    }
+  </style>
+  <text x="52%" y="28" text-anchor="middle" class="brand-title">MAOS</text>
+</svg>
