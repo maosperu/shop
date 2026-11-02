@@ -13,7 +13,7 @@
     "priceUSD": 24,
     "rating": 4.9,
     "reviewsCount": 142,
-    "volume": "30 ml / 1.01 fl. oz.",
+    "volume": "30 ml",
     "concern": "Manchas & Tono irregular",
     "concernSlug": "manchas",
     "skinType": "Todo tipo de piel, especialmente con manchas o tono apagado",
@@ -28,7 +28,8 @@
     "bestSeller": true,
     "tag": "Bestseller",
     "image": "assets/products/anua-niacinamide-10-txa-4.png",
-    "pricePEN": 98
+    "pricePEN": 98,
+    "hoverImage": "assets/products/anua-niacinamide-10-txa-4-hover.png"
   },
   {
     "id": "arencia-retinal-booster-shot",
@@ -59,7 +60,8 @@
     "bestSeller": false,
     "tag": "Alta Eficacia",
     "image": "assets/products/arencia-retinal-booster-shot.png",
-    "pricePEN": 115
+    "pricePEN": 115,
+    "hoverImage": "assets/products/arencia-retinal-booster-shot-hover.png"
   },
   {
     "id": "arencia-vitamin-c-booster-shot",
@@ -90,7 +92,8 @@
     "bestSeller": false,
     "tag": "Glow Intenso",
     "image": "assets/products/arencia-vitamin-c-booster-shot.png",
-    "pricePEN": 115
+    "pricePEN": 115,
+    "hoverImage": "assets/products/arencia-vitamin-c-booster-shot-hover.png"
   },
   {
     "id": "anua-azelaic-acid-10-hyaluron",
@@ -106,7 +109,7 @@
     "priceUSD": 24,
     "rating": 4.9,
     "reviewsCount": 118,
-    "volume": "30 ml / 1.01 fl. oz.",
+    "volume": "30 ml",
     "concern": "Rojeces & Sensibilidad",
     "concernSlug": "rojeces",
     "skinType": "Piel sensible, propensa a rojeces, rosácea o brotes reactivos",
@@ -121,7 +124,8 @@
     "bestSeller": true,
     "tag": "Anti-Rojeces",
     "image": "assets/products/anua-azelaic-acid-10-hyaluron.png",
-    "pricePEN": 98
+    "pricePEN": 98,
+    "hoverImage": "assets/products/anua-azelaic-acid-10-hyaluron-hover.png"
   },
   {
     "id": "celimax-vita-a-retinal-shot",
@@ -152,7 +156,8 @@
     "bestSeller": false,
     "tag": "Minimiza Poros",
     "image": "assets/products/celimax-vita-a-retinal-shot.png",
-    "pricePEN": 120
+    "pricePEN": 120,
+    "hoverImage": "assets/products/celimax-vita-a-retinal-shot-hover.png"
   },
   {
     "id": "dr-althea-147-barrier-cream",
@@ -168,7 +173,7 @@
     "priceUSD": 23,
     "rating": 4.8,
     "reviewsCount": 103,
-    "volume": "50 ml / 1.69 fl. oz.",
+    "volume": "50 ml",
     "concern": "Barrera dañada & Piel seca",
     "concernSlug": "barrera",
     "skinType": "Piel seca, deshidratada, dañada o con barrera comprometida",
@@ -183,7 +188,8 @@
     "bestSeller": false,
     "tag": "Reparador",
     "image": "assets/products/dr-althea-147-barrier-cream.png",
-    "pricePEN": 95
+    "pricePEN": 95,
+    "hoverImage": "assets/products/dr-althea-147-barrier-cream-hover.png"
   },
   {
     "id": "dr-althea-345-relief-cream",
@@ -199,7 +205,7 @@
     "priceUSD": 24,
     "rating": 5,
     "reviewsCount": 268,
-    "volume": "50 ml / 1.69 fl. oz.",
+    "volume": "50 ml",
     "concern": "Post-Acné & Regeneración",
     "concernSlug": "rojeces",
     "skinType": "Piel propensa a acné, mixta, sensible y con marcas",
@@ -214,7 +220,8 @@
     "bestSeller": true,
     "tag": "Viral Bestseller",
     "image": "assets/products/dr-althea-345-relief-cream.png",
-    "pricePEN": 98
+    "pricePEN": 98,
+    "hoverImage": "assets/products/dr-althea-345-relief-cream-hover.png"
   },
   {
     "id": "dr-althea-345-relief-cream-mist",
@@ -230,7 +237,7 @@
     "priceUSD": 22,
     "rating": 4.8,
     "reviewsCount": 64,
-    "volume": "140 ml / 4.73 fl. oz.",
+    "volume": "140 ml",
     "concern": "Calmante & Hidratación Express",
     "concernSlug": "hidratacion",
     "skinType": "Todo tipo de piel, especialmente sensible o apagada",
@@ -245,7 +252,8 @@
     "bestSeller": false,
     "tag": "Bifásica",
     "image": "assets/products/dr-althea-345-relief-cream-mist.png",
-    "pricePEN": 85
+    "pricePEN": 85,
+    "hoverImage": "assets/products/dr-althea-345-relief-cream-mist-hover.png"
   },
   {
     "id": "dr-althea-aqua-marine-deep-serum",
@@ -261,7 +269,7 @@
     "priceUSD": 22,
     "rating": 4.8,
     "reviewsCount": 71,
-    "volume": "45 ml / 1.52 fl. oz.",
+    "volume": "45 ml",
     "concern": "Hidratación & Glass Skin",
     "concernSlug": "hidratacion",
     "skinType": "Piel deshidratada, sedienta, opaca o con sensación tirante",
@@ -276,7 +284,8 @@
     "bestSeller": false,
     "tag": "Glass Skin",
     "image": "assets/products/dr-althea-aqua-marine-deep-serum.png",
-    "pricePEN": 95
+    "pricePEN": 95,
+    "hoverImage": "assets/products/dr-althea-aqua-marine-deep-serum-hover.png"
   },
   {
     "id": "dr-althea-gentle-vitamin-c-serum",
@@ -307,7 +316,8 @@
     "bestSeller": false,
     "tag": "Cero Irritación",
     "image": "assets/products/dr-althea-gentle-vitamin-c-serum.png",
-    "pricePEN": 95
+    "pricePEN": 95,
+    "hoverImage": "assets/products/dr-althea-gentle-vitamin-c-serum-hover.png"
   },
   {
     "id": "dr-althea-vitamin-c-boosting-serum",
@@ -338,7 +348,8 @@
     "bestSeller": true,
     "tag": "Bestseller Glow",
     "image": "assets/products/dr-althea-vitamin-c-boosting-serum.png",
-    "pricePEN": 95
+    "pricePEN": 95,
+    "hoverImage": "assets/products/dr-althea-vitamin-c-boosting-serum-hover.png"
   },
   {
     "id": "haruharu-black-rice-moisture-cleansing-gel",
@@ -354,7 +365,7 @@
     "priceUSD": 19,
     "rating": 4.9,
     "reviewsCount": 153,
-    "volume": "100 ml / 3.4 fl. oz.",
+    "volume": "100 ml",
     "concern": "Limpieza suave & pH equilibrado",
     "concernSlug": "limpieza",
     "skinType": "Todo tipo de piel, especialmente sensible o reactiva",
@@ -385,7 +396,7 @@
     "priceUSD": 21,
     "rating": 5,
     "reviewsCount": 187,
-    "volume": "150 ml / 5.1 fl. oz.",
+    "volume": "150 ml",
     "concern": "Doble Limpieza & Puntos Negros",
     "concernSlug": "limpieza",
     "skinType": "Todo tipo de piel, apto para ojos sensibles y piel grasa o seca",

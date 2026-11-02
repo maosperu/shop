@@ -18,7 +18,7 @@ const PRODUCTS_DATA = [
     priceUSD: 21,
     rating: 4.9,
     reviewsCount: 142,
-    volume: '30 ml / 1.01 fl. oz.',
+    volume: '30 ml',
     concern: 'Manchas & Tono irregular',
     concernSlug: 'manchas',
     skinType: 'Todo tipo de piel, especialmente con manchas o tono apagado',
@@ -27,7 +27,8 @@ const PRODUCTS_DATA = [
     howToUse: 'Aplica 3 a 4 gotas sobre el rostro limpio y tonificado, masajeando suavemente hasta su completa absorción. Úsalo tanto en la rutina de día como de noche. Aplica protector solar durante el día.',
     bestSeller: true,
     tag: 'Bestseller',
-    image: 'assets/products/anua-niacinamide-10-txa-4.png'
+    image: 'assets/products/anua-niacinamide-10-txa-4.png',
+    hoverImage: 'assets/products/anua-niacinamide-10-txa-4-hover.png'
   },
   {
     id: 'arencia-retinal-booster-shot',
@@ -50,7 +51,8 @@ const PRODUCTS_DATA = [
     howToUse: 'Uso nocturno. Aplica una cantidad del tamaño de un guisante sobre la piel seca después del tónico. Si es tu primera vez usando retinal, comienza 2-3 noches por semana e hidrata abundantemente.',
     bestSeller: false,
     tag: 'Alta Eficacia',
-    image: 'assets/products/arencia-retinal-booster-shot.png'
+    image: 'assets/products/arencia-retinal-booster-shot.png',
+    hoverImage: 'assets/products/arencia-retinal-booster-shot-hover.png'
   },
   {
     id: 'arencia-vitamin-c-booster-shot',
@@ -73,7 +75,8 @@ const PRODUCTS_DATA = [
     howToUse: 'Aplica en la mañana sobre la piel limpia antes de tu crema hidratante. Finaliza siempre con protector solar de amplio espectro.',
     bestSeller: false,
     tag: 'Glow Intenso',
-    image: 'assets/products/arencia-vitamin-c-booster-shot.png'
+    image: 'assets/products/arencia-vitamin-c-booster-shot.png',
+    hoverImage: 'assets/products/arencia-vitamin-c-booster-shot-hover.png'
   },
   {
     id: 'anua-azelaic-acid-10-hyaluron',
@@ -87,7 +90,7 @@ const PRODUCTS_DATA = [
     priceUSD: 22,
     rating: 4.9,
     reviewsCount: 118,
-    volume: '30 ml / 1.01 fl. oz.',
+    volume: '30 ml',
     concern: 'Rojeces & Sensibilidad',
     concernSlug: 'rojeces',
     skinType: 'Piel sensible, propensa a rojeces, rosácea o brotes reactivos',
@@ -96,7 +99,8 @@ const PRODUCTS_DATA = [
     howToUse: 'Aplica unas gotas mañana y noche sobre la piel limpia. Excelente para calmar irritaciones y aliviar pieles reactivas.',
     bestSeller: true,
     tag: 'Anti-Rojeces',
-    image: 'assets/products/anua-azelaic-acid-10-hyaluron.png'
+    image: 'assets/products/anua-azelaic-acid-10-hyaluron.png',
+    hoverImage: 'assets/products/anua-azelaic-acid-10-hyaluron-hover.png'
   },
   {
     id: 'celimax-vita-a-retinal-shot',
@@ -119,7 +123,8 @@ const PRODUCTS_DATA = [
     howToUse: 'Aplica en la noche sobre rostro y cuello. Masajea suavemente en zonas con poros visibles o líneas finas. Inicia de manera progresiva.',
     bestSeller: false,
     tag: 'Minimiza Poros',
-    image: 'assets/products/celimax-vita-a-retinal-shot.png'
+    image: 'assets/products/celimax-vita-a-retinal-shot.png',
+    hoverImage: 'assets/products/celimax-vita-a-retinal-shot-hover.png'
   },
   {
     id: 'dr-althea-147-barrier-cream',
@@ -133,7 +138,7 @@ const PRODUCTS_DATA = [
     priceUSD: 21,
     rating: 4.8,
     reviewsCount: 103,
-    volume: '50 ml / 1.69 fl. oz.',
+    volume: '50 ml',
     concern: 'Barrera dañada & Piel seca',
     concernSlug: 'barrera',
     skinType: 'Piel seca, deshidratada, dañada o con barrera comprometida',
@@ -142,7 +147,8 @@ const PRODUCTS_DATA = [
     howToUse: 'Aplica como último paso de tu rutina nocturna o antes del protector solar en el día. Masajea hasta que se funda con la piel.',
     bestSeller: false,
     tag: 'Reparador',
-    image: 'assets/products/dr-althea-147-barrier-cream.png'
+    image: 'assets/products/dr-althea-147-barrier-cream.png',
+    hoverImage: 'assets/products/dr-althea-147-barrier-cream-hover.png'
   },
   {
     id: 'dr-althea-345-relief-cream',
@@ -156,7 +162,7 @@ const PRODUCTS_DATA = [
     priceUSD: 27,
     rating: 5.0,
     reviewsCount: 268,
-    volume: '50 ml / 1.69 fl. oz.',
+    volume: '50 ml',
     concern: 'Post-Acné & Regeneración',
     concernSlug: 'rojeces',
     skinType: 'Piel propensa a acné, mixta, sensible y con marcas',
@@ -165,7 +171,8 @@ const PRODUCTS_DATA = [
     howToUse: 'Aplica una cantidad generosa mañana y noche sobre la piel limpia tras tus sérums. Textura en gel sedosa de rápida absorción sin sensación grasa.',
     bestSeller: true,
     tag: 'Viral Bestseller',
-    image: 'assets/products/dr-althea-345-relief-cream.png'
+    image: 'assets/products/dr-althea-345-relief-cream.png',
+    hoverImage: 'assets/products/dr-althea-345-relief-cream-hover.png'
   },
   {
     id: 'dr-althea-345-relief-cream-mist',
@@ -179,7 +186,7 @@ const PRODUCTS_DATA = [
     priceUSD: 21,
     rating: 4.8,
     reviewsCount: 64,
-    volume: '140 ml / 4.73 fl. oz.',
+    volume: '140 ml',
     concern: 'Calmante & Hidratación Express',
     concernSlug: 'hidratacion',
     skinType: 'Todo tipo de piel, especialmente sensible o apagada',
@@ -188,7 +195,8 @@ const PRODUCTS_DATA = [
     howToUse: 'Agita suavemente para mezclar la capa de crema con la capa acuosa. Rocía a 20 cm del rostro con los ojos cerrados cada vez que tu piel necesite un boost de hidratación.',
     bestSeller: false,
     tag: 'Bifásica',
-    image: 'assets/products/dr-althea-345-relief-cream-mist.png'
+    image: 'assets/products/dr-althea-345-relief-cream-mist.png',
+    hoverImage: 'assets/products/dr-althea-345-relief-cream-mist-hover.png'
   },
   {
     id: 'dr-althea-aqua-marine-deep-serum',
@@ -202,7 +210,7 @@ const PRODUCTS_DATA = [
     priceUSD: 11,
     rating: 4.8,
     reviewsCount: 71,
-    volume: '45 ml / 1.52 fl. oz.',
+    volume: '45 ml',
     concern: 'Hidratación & Glass Skin',
     concernSlug: 'hidratacion',
     skinType: 'Piel deshidratada, sedienta, opaca o con sensación tirante',
@@ -211,7 +219,8 @@ const PRODUCTS_DATA = [
     howToUse: 'Dispensa 2-3 gotas y distribuye sobre rostro y escote. Presiona con las palmas para favorecer la absorción.',
     bestSeller: false,
     tag: 'Glass Skin',
-    image: 'assets/products/dr-althea-aqua-marine-deep-serum.png'
+    image: 'assets/products/dr-althea-aqua-marine-deep-serum.png',
+    hoverImage: 'assets/products/dr-althea-aqua-marine-deep-serum-hover.png'
   },
   {
     id: 'dr-althea-gentle-vitamin-c-serum',
@@ -234,7 +243,8 @@ const PRODUCTS_DATA = [
     howToUse: 'Aplica en la mañana sobre la piel limpia. Apta para uso diario incluso en pieles reactivas.',
     bestSeller: false,
     tag: 'Cero Irritación',
-    image: 'assets/products/dr-althea-gentle-vitamin-c-serum.png'
+    image: 'assets/products/dr-althea-gentle-vitamin-c-serum.png',
+    hoverImage: 'assets/products/dr-althea-gentle-vitamin-c-serum-hover.png'
   },
   {
     id: 'dr-althea-vitamin-c-boosting-serum',
@@ -257,7 +267,8 @@ const PRODUCTS_DATA = [
     howToUse: 'Aplica de 3 a 5 gotas cada mañana antes de hidratar. Finaliza siempre con tu protector solar favorito.',
     bestSeller: true,
     tag: 'Bestseller Glow',
-    image: 'assets/products/dr-althea-vitamin-c-boosting-serum.png'
+    image: 'assets/products/dr-althea-vitamin-c-boosting-serum.png',
+    hoverImage: 'assets/products/dr-althea-vitamin-c-boosting-serum-hover.png'
   },
   {
     id: 'haruharu-black-rice-moisture-cleansing-gel',
@@ -271,7 +282,7 @@ const PRODUCTS_DATA = [
     priceUSD: 16,
     rating: 4.9,
     reviewsCount: 153,
-    volume: '100 ml / 3.4 fl. oz.',
+    volume: '100 ml',
     concern: 'Limpieza suave & pH equilibrado',
     concernSlug: 'limpieza',
     skinType: 'Todo tipo de piel, especialmente sensible o reactiva',
@@ -294,7 +305,7 @@ const PRODUCTS_DATA = [
     priceUSD: 22,
     rating: 5.0,
     reviewsCount: 187,
-    volume: '150 ml / 5.1 fl. oz.',
+    volume: '150 ml',
     concern: 'Doble Limpieza & Puntos Negros',
     concernSlug: 'limpieza',
     skinType: 'Todo tipo de piel, apto para ojos sensibles y piel grasa o seca',
@@ -380,6 +391,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAnnouncements();
   initEventListeners();
   renderProducts();
+  initProductPage();
   updateCartUI();
 });
 
@@ -456,6 +468,7 @@ function initEventListeners() {
       localStorage.setItem('maos_currency', state.currency);
       setCurrencyToggleState(newCurrency);
       renderProducts();
+      updateProductPagePrices();
       updateCartUI();
       showToast(`Moneda cambiada a ${state.currency === 'PEN' ? 'Soles (S/.)' : 'Dólares ($ USD)'}`);
     });
@@ -653,27 +666,28 @@ function initEventListeners() {
     mobileDrawerOverlay.addEventListener('click', closeMobileMenu);
   }
 
-  // Mobile Currency Selector sync
+  // Mobile Currency Selector — button-based UI
+  function syncMobileCurrencyBtns(currency) {
+    const penBtn = document.getElementById('mobileCurrencyPEN');
+    const usdBtn = document.getElementById('mobileCurrencyUSD');
+    if (penBtn) penBtn.classList.toggle('active', currency === 'PEN');
+    if (usdBtn) usdBtn.classList.toggle('active', currency === 'USD');
+  }
+
+  // Legacy select sync (producto.html still uses it)
   const mobileCurrencySelect = document.getElementById('mobileCurrencySelect');
   const mobileCurrencyFlag = document.getElementById('mobileCurrencyFlag');
 
   if (mobileCurrencySelect) {
-    // Set initial value from state
     mobileCurrencySelect.value = state.currency;
     if (mobileCurrencyFlag) mobileCurrencyFlag.textContent = state.currency === 'PEN' ? '🇵🇪' : '🇺🇸';
-
     mobileCurrencySelect.addEventListener('change', (e) => {
-      const newCurrency = e.target.value;
-      state.currency = newCurrency;
-      localStorage.setItem('maos_currency', state.currency);
-      if (mobileCurrencyFlag) mobileCurrencyFlag.textContent = newCurrency === 'PEN' ? '🇵🇪' : '🇺🇸';
-      // Sync desktop currency toggle
-      setCurrencyToggleState(newCurrency);
-      renderProducts();
-      updateCartUI();
-      showToast(`Moneda cambiada a ${newCurrency === 'PEN' ? 'Soles (S/.)' : 'Dólares ($ USD)'}`);
+      setMobileCurrency(e.target.value);
     });
   }
+
+  // Init button state
+  syncMobileCurrencyBtns(state.currency);
 
   // Keyboard escape
   document.addEventListener('keydown', (e) => {
@@ -866,7 +880,7 @@ function renderProducts() {
     const matchesCategory = (state.activeCategory === 'all' || p.category === state.activeCategory);
     const matchesBrand = (state.activeBrand === 'all' || p.brand.toLowerCase() === state.activeBrand.toLowerCase());
     const matchesConcern = (state.activeConcern === 'all' || p.concernSlug === state.activeConcern);
-    const matchesSearch = !state.searchQuery || 
+    const matchesSearch = !state.searchQuery ||
       p.name.toLowerCase().includes(state.searchQuery) ||
       p.brand.toLowerCase().includes(state.searchQuery) ||
       p.target.toLowerCase().includes(state.searchQuery) ||
@@ -889,6 +903,10 @@ function renderProducts() {
   if (countEl) {
     countEl.textContent = `${filtered.length} productos`;
   }
+  const filterToolbarCount = document.getElementById('filterToolbarCount');
+  if (filterToolbarCount) {
+    filterToolbarCount.textContent = `(${filtered.length})`;
+  }
 
   if (filtered.length === 0) {
     grid.innerHTML = `
@@ -902,11 +920,12 @@ function renderProducts() {
 
   grid.innerHTML = filtered.map(product => {
     const isWishlisted = state.wishlist.has(product.id);
-    const badgeHtml = product.tag ? 
+    const badgeHtml = product.tag ?
       `<span class="card-badge ${product.bestSeller ? 'bestseller' : ''}">${product.tag}</span>` : '';
+    const productUrl = `producto.html?id=${encodeURIComponent(product.id)}`;
 
     return `
-      <article class="product-card" data-id="${product.id}">
+      <article class="product-card ${product.hoverImage ? 'has-hover-image' : ''}" data-id="${product.id}">
         ${badgeHtml}
         <button class="card-wishlist-btn ${isWishlisted ? 'active' : ''}" 
                 onclick="toggleWishlist('${product.id}')" 
@@ -917,21 +936,23 @@ function renderProducts() {
           </svg>
         </button>
 
-        <div class="product-image-container" onclick="openQuickView('${product.id}')">
-          <img class="product-img" src="${product.image}" alt="${product.name}" loading="lazy" />
-          <button class="quick-view-overlay-btn" type="button">Vista Rápida</button>
-          <button class="card-quick-add-bag" type="button" onclick="event.stopPropagation(); addToCart('${product.id}')" aria-label="Añadir al carrito">
+        <a class="product-image-container" href="${productUrl}" aria-label="Ver detalles de ${product.name}">
+          <img class="product-img primary-img" src="${product.image}" alt="${product.name}" loading="lazy" />
+          ${product.hoverImage ? `<img class="product-img hover-img" src="${product.hoverImage}" alt="${product.name} vista secundaria" loading="lazy" />` : ''}
+          <button class="card-quick-add-bag" type="button" onclick="event.preventDefault(); event.stopPropagation(); addToCart('${product.id}')" aria-label="Añadir al carrito" title="Añadir al carrito">
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
               <line x1="3" y1="6" x2="21" y2="6"></line>
               <path d="M16 10a4 4 0 0 1-8 0"></path>
             </svg>
           </button>
-        </div>
+        </a>
 
         <div class="product-info">
           <span class="product-brand">${product.brand}</span>
-          <h3 class="product-name" onclick="openQuickView('${product.id}')">${product.name}</h3>
+          <h3 class="product-name">
+            <a href="${productUrl}">${product.name}</a>
+          </h3>
           
           <div class="product-meta-row">
             <span class="product-volume">${product.volume}</span>
@@ -1074,13 +1095,15 @@ function updateCartUI() {
     shippingBarEl.style.width = `${progressPercent}%`;
   }
 
+  const thresholdFormatted = state.currency === 'USD' ? '$80 USD' : 'S/. 300';
+
   if (shippingStatusEl) {
     if (progressPercent >= 100) {
       shippingStatusEl.innerHTML = `🎉 <strong>¡Felicidades! Tienes ENVÍO GRATIS asegurado a todo el Perú</strong>`;
     } else {
       const remaining = Math.max(0, Math.round((threshold - currentSubtotal) * 100) / 100);
       const formattedRem = state.currency === 'USD' ? `$${remaining} USD` : `S/. ${remaining}`;
-      shippingStatusEl.innerHTML = `Te faltan <strong>${formattedRem}</strong> para obtener <strong>ENVÍO GRATIS</strong> (a partir de S/. 300)`;
+      shippingStatusEl.innerHTML = `Te faltan <strong>${formattedRem}</strong> para obtener <strong>ENVÍO GRATIS</strong> (a partir de ${thresholdFormatted})`;
     }
   }
 
@@ -1097,7 +1120,7 @@ function updateCartUI() {
           </svg>
         </div>
         <p>Tu carrito está vacío</p>
-        <button class="btn-pill btn-pill-primary" onclick="closeCart()">Ver Catálogo</button>
+        <button class="btn-pill btn-pill-primary" onclick="closeCart()">Ver Tienda</button>
       </div>
     `;
     return;
@@ -1107,23 +1130,34 @@ function updateCartUI() {
     const pen = Number(item.pricePEN) || (PRODUCTS_DATA.find(p => p.id === item.id)?.pricePEN) || 0;
     const usd = Number(item.priceUSD) || (PRODUCTS_DATA.find(p => p.id === item.id)?.priceUSD) || 0;
     const qty = Number(item.qty) || 1;
+    const prod = PRODUCTS_DATA.find(p => p.id === item.id);
+    const volume = item.volume || prod?.volume || '';
     return `
     <div class="cart-item-card">
       <div class="cart-item-img">
         <img src="${item.image}" alt="${item.name}" />
       </div>
       <div class="cart-item-info">
-        <span class="cart-item-brand">${item.brand}</span>
-        <h4>${item.name}</h4>
-        <div class="cart-item-price">${formatPrice(pen * qty, usd * qty)}</div>
-        <div class="cart-item-controls-row">
-          <div class="cart-qty-ctrl">
-            <button class="cart-qty-btn" onclick="updateCartQty('${item.id}', -1)" aria-label="Disminuir">−</button>
-            <span class="cart-qty-val">${qty}</span>
-            <button class="cart-qty-btn" onclick="updateCartQty('${item.id}', 1)" aria-label="Aumentar">+</button>
+        <div class="cart-item-top-row">
+          <div class="cart-item-name-col">
+            <span class="cart-item-brand">${item.brand}</span>
+            <h4>${item.name}</h4>
+            ${volume ? `<span class="cart-item-volume">${volume}</span>` : ''}
           </div>
-          <button class="cart-item-delete" onclick="removeCartItem('${item.id}')" aria-label="Eliminar producto del carrito" title="Eliminar">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <div class="cart-item-price">${formatPrice(pen * qty, usd * qty)}</div>
+        </div>
+        <div class="cart-item-controls-row">
+          <div class="cart-qty-ctrl cart-qty-ctrl--inline">
+            <button class="cart-qty-btn" onclick="updateCartQty('${item.id}', -1)" aria-label="Disminuir">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </button>
+            <span class="cart-qty-val">${qty}</span>
+            <button class="cart-qty-btn" onclick="updateCartQty('${item.id}', 1)" aria-label="Aumentar">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </button>
+          </div>
+          <button class="cart-item-delete" onclick="removeCartItem('${item.id}')" aria-label="Eliminar producto del carrito" title="Eliminar producto">
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="3 6 5 6 21 6"></polyline>
               <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
               <line x1="10" y1="11" x2="10" y2="17"></line>
@@ -1160,146 +1194,498 @@ function openWhatsAppDirect(customText = "") {
   window.open(url, '_blank');
 }
 
-// Quick View Modal with Quantity Selector and Direct Add to Cart
-function openQuickView(productId) {
-  const product = PRODUCTS_DATA.find(p => p.id === productId);
-  if (!product) return;
-
-  currentQuickViewProduct = product;
-  currentQuickViewQty = 1;
-
-  const modal = document.getElementById('quickViewModal');
-  const content = document.getElementById('quickViewBody');
-  if (!modal || !content) return;
-
-  const starSvg = `<svg width="15" height="15" viewBox="0 0 20 20" fill="#f59e0b" style="display:inline-block; vertical-align:middle;"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>`;
-
-  content.innerHTML = `
-    <div class="quickview-gallery">
-      <div class="quickview-img-wrapper">
-        <img src="${product.image}" alt="${product.name}" />
-      </div>
-    </div>
-    <div class="quickview-details">
-      <div class="quickview-top-badges">
-        <span class="qv-badge-brand">${product.brand}</span>
-        <span class="qv-badge-verified">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          100% Original Seúl
-        </span>
-      </div>
-
-      <h2 class="quickview-title">${product.name}</h2>
-      
-      <div class="quickview-meta">
-        <div class="quickview-stars-row" aria-label="Calificación ${product.rating} de 5">
-          ${starSvg}${starSvg}${starSvg}${starSvg}${starSvg}
-        </div>
-        <span class="quickview-rating-num">${product.rating}</span>
-        <span class="quickview-reviews-count">(${product.reviewsCount} reseñas)</span>
-        <span class="quickview-meta-dot">•</span>
-        <span class="quickview-volume-tag">${product.volume}</span>
-      </div>
-
-      <div class="quickview-price" id="quickViewPriceDisplay">
-        ${formatPrice(product.pricePEN, product.priceUSD)}
-      </div>
-
-      <div class="quickview-target">
-        <div class="qv-target-label">Objetivo de la fórmula</div>
-        <div class="qv-target-text">${product.target}</div>
-      </div>
-
-      <div class="quickview-ingredients">
-        <div class="quickview-ingredients-title">Ingredientes Clave Destacados:</div>
-        <div class="ingredients-tags">
-          ${product.keyIngredients.map(ing => `<span class="ing-tag">${ing}</span>`).join('')}
-        </div>
-      </div>
-
-      <div class="quickview-howtouse">
-        <div class="quickview-howtouse-label">Modo de Uso Sugerido:</div>
-        <p>${product.howToUse}</p>
-      </div>
-
-      <!-- Luxury Stable Purchase Panel (Zero Layout Shift) -->
-      <div class="quickview-purchase-card">
-        <div class="quickview-calc-row">
-          <div class="quickview-qty-group">
-            <span class="quickview-calc-label">Cantidad</span>
-            <div class="cart-qty-ctrl">
-              <button class="cart-qty-btn" type="button" onclick="changeQuickViewQty(-1)" aria-label="Disminuir cantidad">−</button>
-              <span class="cart-qty-val" id="modalQtyVal">1</span>
-              <button class="cart-qty-btn" type="button" onclick="changeQuickViewQty(1)" aria-label="Aumentar cantidad">+</button>
-            </div>
-          </div>
-          <div class="quickview-subtotal-group">
-            <span class="quickview-calc-label">Subtotal</span>
-            <span class="quickview-subtotal-amount" id="modalSubtotalHint">${formatPrice(product.pricePEN, product.priceUSD)}</span>
-          </div>
-        </div>
-
-        <div class="quickview-actions">
-          <button class="btn-pill btn-pill-primary quickview-btn-add" type="button" onclick="addFromQuickView()">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-              <line x1="3" y1="6" x2="21" y2="6"></line>
-              <path d="M16 10a4 4 0 0 1-8 0"></path>
-            </svg>
-            <span class="btn-add-label">Añadir al Carrito</span>
-            <span class="btn-add-counter" id="btnQuickViewCounter">(1)</span>
-          </button>
-          <button class="btn-pill btn-pill-ghost quickview-btn-wa" type="button" onclick="askAboutProductOnWhatsApp('${product.name}')">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-              <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.17L2 22l4.982-1.402A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.2c-1.626 0-3.136-.502-4.385-1.362l-.314-.216-2.956.832.842-2.883-.235-.333A8.163 8.163 0 013.8 12c0-4.522 3.678-8.2 8.2-8.2 4.522 0 8.2 3.678 8.2 8.2 0 4.522-3.678 8.2-8.2 8.2z"/>
-            </svg>
-            <span>WhatsApp</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  `;
-
-  modal.classList.add('active');
-  document.body.style.overflow = 'hidden';
-}
-
-function changeQuickViewQty(delta) {
-  if (!currentQuickViewProduct) return;
-  currentQuickViewQty = Math.max(1, currentQuickViewQty + delta);
-  
-  const qtyValEl = document.getElementById('modalQtyVal');
-  const counterEl = document.getElementById('btnQuickViewCounter');
-  const subtotalHintEl = document.getElementById('modalSubtotalHint');
-
-  if (qtyValEl) qtyValEl.textContent = currentQuickViewQty;
-  if (counterEl) counterEl.textContent = `(${currentQuickViewQty})`;
-
-  if (subtotalHintEl) {
-    const pen = currentQuickViewProduct.pricePEN * currentQuickViewQty;
-    const usd = currentQuickViewProduct.priceUSD * currentQuickViewQty;
-    subtotalHintEl.textContent = formatPrice(pen, usd);
+// Open product in the current tab
+function openProduct(productId, newTab = false) {
+  const url = `producto.html?id=${encodeURIComponent(productId)}`;
+  if (newTab) {
+    window.open(url, '_blank');
+  } else {
+    window.location.href = url;
   }
 }
 
-function addFromQuickView() {
-  if (!currentQuickViewProduct) return;
-  addToCart(currentQuickViewProduct.id, currentQuickViewQty);
-  closeQuickView();
-  openCart();
+// Redirect quick view directly to product page in current tab
+function openQuickView(productId) {
+  openProduct(productId, false);
 }
 
 function closeQuickView() {
   const modal = document.getElementById('quickViewModal');
   if (modal) modal.classList.remove('active');
   document.body.style.overflow = '';
-  currentQuickViewProduct = null;
-  currentQuickViewQty = 1;
 }
 
 function askAboutProductOnWhatsApp(productName) {
   openWhatsAppDirect(`¡Hola Maos Tacna! Tengo una consulta sobre el producto "${productName}".`);
+}
+
+// ==========================================================================
+// PRODUCT DETAIL PAGE (PDP) CONTROLLER
+// ==========================================================================
+let currentPdpProduct = null;
+let currentPdpQty = 1;
+let currentPdpImageIndex = 0;
+let pdpImages = [];
+
+function initProductPage() {
+  const pdpMain = document.getElementById('pdpMain');
+  if (!pdpMain) return;
+
+  const urlParams = new URLSearchParams(window.location.search);
+  let prodId = urlParams.get('id');
+
+  // Fallback map in case of older links or ID variants
+  if (prodId === 'celimax-the-vita-a-retinal-shot-tightening-booster') {
+    prodId = 'celimax-vita-a-retinal-shot';
+  }
+
+  let product = PRODUCTS_DATA.find(p => p.id === prodId);
+  if (!product) {
+    // Default to viral bestseller if no ID or invalid
+    product = PRODUCTS_DATA.find(p => p.id === 'dr-althea-345-relief-cream') || PRODUCTS_DATA[0];
+  }
+
+  currentPdpProduct = product;
+  currentPdpQty = 1;
+  currentPdpImageIndex = 0;
+
+  // Build images array
+  pdpImages = [product.image];
+  if (product.hoverImage) {
+    pdpImages.push(product.hoverImage);
+  }
+
+  // Update Page Title and Meta
+  document.title = `${product.name} • ${product.brand} | Maos Skincare Tacna`;
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) {
+    metaDesc.content = `${product.name} de ${product.brand} en Tacna, Perú. ${product.target}. Cosmética coreana 100% original con envíos a todo el Perú.`;
+  }
+
+  // Populate Breadcrumbs
+  const breadcrumbBrand = document.getElementById('pdpBreadcrumbBrand');
+  const breadcrumbCurrent = document.getElementById('pdpBreadcrumbCurrent');
+  if (breadcrumbBrand) {
+    breadcrumbBrand.textContent = product.brand;
+    breadcrumbBrand.onclick = (e) => {
+      e.preventDefault();
+      sessionStorage.setItem('filterBrand', product.brand);
+      window.location.href = 'tienda.html';
+    };
+  }
+  if (breadcrumbCurrent) {
+    breadcrumbCurrent.textContent = product.shortName || product.name;
+  }
+
+  // Populate Badges
+  const badgeRow = document.getElementById('pdpBadgeRow');
+  if (badgeRow) {
+    let badges = `<span class="pdp-gallery-badge origin">🇰🇷 100% Seúl</span>`;
+    if (product.tag) {
+      badges += `<span class="pdp-gallery-badge ${product.bestSeller ? 'bestseller' : ''}">${product.tag}</span>`;
+    }
+    badgeRow.innerHTML = badges;
+  }
+
+  // Populate Main Image
+  const mainImg = document.getElementById('pdpMainImg');
+  if (mainImg) {
+    mainImg.src = pdpImages[0];
+    mainImg.alt = product.name;
+  }
+
+  // Populate Gallery Arrows & Dots
+  const prevArrow = document.getElementById('pdpPrevArrow');
+  const nextArrow = document.getElementById('pdpNextArrow');
+  const dotsContainer = document.getElementById('pdpGalleryDots');
+
+  if (pdpImages.length > 1) {
+    if (prevArrow) prevArrow.style.display = 'flex';
+    if (nextArrow) nextArrow.style.display = 'flex';
+    if (dotsContainer) {
+      dotsContainer.style.display = 'flex';
+      dotsContainer.innerHTML = pdpImages.map((_, idx) => `
+        <span class="pdp-gallery-dot ${idx === 0 ? 'active' : ''}" onclick="setPdpActiveImage(${idx})" aria-label="Vista ${idx + 1}"></span>
+      `).join('');
+    }
+  } else {
+    if (prevArrow) prevArrow.style.display = 'none';
+    if (nextArrow) nextArrow.style.display = 'none';
+    if (dotsContainer) dotsContainer.style.display = 'none';
+  }
+
+  // Mobile Touch Swipe for Gallery
+  const galleryMain = document.getElementById('pdpGalleryMain');
+  if (galleryMain && !galleryMain._touchBound) {
+    galleryMain._touchBound = true;
+    let touchStartX = 0;
+    galleryMain.addEventListener('touchstart', e => {
+      touchStartX = e.changedTouches[0].clientX;
+    }, { passive: true });
+    galleryMain.addEventListener('touchend', e => {
+      const diffX = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diffX) > 40) {
+        pdpNavigate(diffX > 0 ? 1 : -1);
+      }
+    }, { passive: true });
+  }
+
+  // Populate Product Info
+  const brandTag = document.getElementById('pdpBrandTag');
+  if (brandTag) {
+    brandTag.textContent = product.brand;
+    brandTag.onclick = (e) => {
+      e.preventDefault();
+      sessionStorage.setItem('filterBrand', product.brand);
+      window.location.href = 'tienda.html';
+    };
+  }
+
+  const titleEl = document.getElementById('pdpTitle');
+  if (titleEl) titleEl.textContent = product.name;
+
+  const ratingScore = document.getElementById('pdpRatingScore');
+  if (ratingScore) ratingScore.textContent = product.rating;
+
+  const reviewsCount = document.getElementById('pdpReviewsCount');
+  if (reviewsCount) reviewsCount.textContent = `(${product.reviewsCount} reseñas)`;
+
+  const volumeChip = document.getElementById('pdpVolumeChip');
+  if (volumeChip) volumeChip.textContent = product.volume;
+
+  // Price & Subtotal
+  renderPdpPrices();
+
+  // Highlights
+  const skinTypeEl = document.getElementById('pdpSkinType');
+  if (skinTypeEl) skinTypeEl.textContent = product.skinType;
+
+  const targetEl = document.getElementById('pdpTarget');
+  if (targetEl) targetEl.textContent = product.target;
+
+  const categoryEl = document.getElementById('pdpCategory');
+  if (categoryEl) categoryEl.textContent = product.categoryLabel;
+
+  // Ingredients Tags
+  const ingTags = document.getElementById('pdpIngredientsTags');
+  if (ingTags) {
+    ingTags.innerHTML = product.keyIngredients.map(ing => `<span class="ing-tag">${ing}</span>`).join('');
+  }
+
+  // Tabs Content
+  const tabDesc = document.getElementById('pdpTabDescContent');
+  if (tabDesc) {
+    tabDesc.innerHTML = `
+      <p style="font-size: 15.5px; color: var(--color-midcurrent-navy); font-weight: 600; margin-bottom: 16px;">
+        🎯 ${product.target}.
+      </p>
+      <p>
+        Formulado bajo los más altos estándares de innovación dermatológica de Seúl, este tratamiento de <strong>${product.brand}</strong> transforma la textura y luminosidad cutánea sin comprometer la barrera de tu piel.
+      </p>
+      <p>
+        <strong>Tipo de piel recomendado:</strong> ${product.skinType}.
+      </p>
+      <div style="margin-top: 24px; background: #fafafa; border: 1px solid var(--color-cloud-veil); padding: 20px; border-radius: 14px;">
+        <h4 style="font-size: 14.5px; font-weight: 700; color: var(--color-midcurrent-navy); margin-bottom: 10px;">✦ Garantía de Calidad Maos Tacna:</h4>
+        <ul style="padding-left: 20px; margin: 0; line-height: 1.65; font-size: 13.5px; color: var(--color-slate-gray);">
+          <li>100% auténtico importado directamente de Corea del Sur (código de lote verificable).</li>
+          <li>Sin parabenos, sulfatos agresivos ni aceites minerales perjudiciales.</li>
+          <li>Fórmula suave de rápida absorción con acabado sedoso no graso.</li>
+        </ul>
+      </div>
+    `;
+  }
+
+  const tabHowToUse = document.getElementById('pdpTabHowToUseContent');
+  if (tabHowToUse) {
+    tabHowToUse.innerHTML = `
+      <p style="font-size: 15px; margin-bottom: 20px; color: var(--color-midcurrent-navy); line-height: 1.6;">
+        <strong>Modo de Aplicación:</strong> ${product.howToUse}
+      </p>
+      <h4 style="font-size: 15px; font-weight: 700; color: var(--color-midcurrent-navy); margin: 26px 0 14px;">¿Dónde encaja este producto en tu rutina diaria?</h4>
+      <div class="pdp-routine-steps-grid">
+        <div class="pdp-routine-step-card ${product.category === 'limpieza' ? 'active-step' : ''}">
+          <span class="pdp-routine-step-num">Paso 01 / 02</span>
+          <div class="pdp-routine-step-title">Limpieza Facial</div>
+          <div class="pdp-routine-step-desc">Doble limpieza: aceite limpiador botánico + gel espumoso a pH 5.5.</div>
+        </div>
+        <div class="pdp-routine-step-card ${product.category === 'brumas' ? 'active-step' : ''}">
+          <span class="pdp-routine-step-num">Paso 03</span>
+          <div class="pdp-routine-step-title">Tónico / Bruma</div>
+          <div class="pdp-routine-step-desc">Inunda la piel de humedad multicapa y equilibra el manto ácido.</div>
+        </div>
+        <div class="pdp-routine-step-card ${['serums', 'retinoides', 'vitamin-c', 'sets'].includes(product.category) ? 'active-step' : ''}">
+          <span class="pdp-routine-step-num">Paso 04</span>
+          <div class="pdp-routine-step-title">Tratamiento Concentrado</div>
+          <div class="pdp-routine-step-desc">Activos de choque para manchas, elasticidad, arrugas o rojeces.</div>
+        </div>
+        <div class="pdp-routine-step-card ${product.category === 'cremas' ? 'active-step' : ''}">
+          <span class="pdp-routine-step-num">Paso 05</span>
+          <div class="pdp-routine-step-title">Crema Reparadora</div>
+          <div class="pdp-routine-step-desc">Sella la nutrición y refuerza la barrera lipídica durante todo el día.</div>
+        </div>
+      </div>
+      <p style="font-size: 13px; color: var(--color-slate-gray); margin-top: 18px;">
+        💡 <em>Recomendación Maos:</em> Durante el día, culmina siempre tu rutina con tu protector solar favorito para proteger los activos y prevenir nuevas manchas.
+      </p>
+    `;
+  }
+
+  const tabIngredients = document.getElementById('pdpTabIngredientsContent');
+  if (tabIngredients) {
+    tabIngredients.innerHTML = `
+      <p style="margin-bottom: 16px;">
+        Fórmula limpia coreana con una sinergia equilibrada de ingredientes bio-activos:
+      </p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 14px;">
+        ${product.keyIngredients.map(ing => `
+          <div style="background: var(--color-morning-mist); padding: 14px 18px; border-radius: 12px; border: 1px solid var(--color-cloud-veil);">
+            <strong style="color: var(--color-midcurrent-navy); font-size: 14px;">${ing}</strong>
+            <p style="font-size: 12.5px; color: var(--color-slate-gray); margin: 4px 0 0;">Ingrediente estrella seleccionado por su biocompatibilidad y alta eficacia comprobada.</p>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+
+  // Render Related Products
+  renderPdpRelatedProducts();
+
+  // Populate Mobile Accordions
+  _populatePdpMobileAccordions(product);
+}
+
+function _populatePdpMobileAccordions(product) {
+  // Descripción & Beneficios
+  const accDesc = document.getElementById('pdpAccordionDesc');
+  if (accDesc) {
+    accDesc.innerHTML = `
+      <p style="font-size:14px;font-weight:600;color:var(--color-midcurrent-navy);margin-bottom:10px;">🎯 ${product.target}.</p>
+      <p style="margin-bottom:10px;">Formulado bajo los más altos estándares de innovación dermatológica de Seúl por <strong>${product.brand}</strong>.</p>
+      <ul style="padding-left:18px;margin:0;line-height:1.65;">
+        <li>100% auténtico importado de Corea del Sur.</li>
+        <li>Sin parabenos ni aceites minerales perjudiciales.</li>
+        <li>Rápida absorción con acabado sedoso no graso.</li>
+      </ul>
+    `;
+  }
+
+  // Detalles del Producto
+  const accSpecs = document.getElementById('pdpAccordionSpecs');
+  if (accSpecs) {
+    const ingHtml = product.keyIngredients.map(i => `<span class="ing-tag">${i}</span>`).join('');
+    accSpecs.innerHTML = `
+      <div class="pdp-accordion-specs">
+        <div class="pdp-spec-line"><span class="pdp-spec-label">Objetivo:</span><span>${product.target}</span></div>
+        <div class="pdp-spec-line"><span class="pdp-spec-label">Tipo de Piel:</span><span>${product.skinType}</span></div>
+        <div class="pdp-spec-line"><span class="pdp-spec-label">Categoría:</span><span>${product.categoryLabel}</span></div>
+        <div class="pdp-spec-line"><span class="pdp-spec-label">Ingredientes Clave:</span><div class="pdp-ingredients-tags" style="margin-top:6px;">${ingHtml}</div></div>
+      </div>
+    `;
+  }
+
+  // Modo de Uso
+  const accHow = document.getElementById('pdpAccordionHowToUse');
+  if (accHow) {
+    const steps = [
+      { n: '01', title: 'Limpieza', desc: 'Comienza con rostro limpio y ligeramente húmedo.' },
+      { n: '02', title: 'Tónico', desc: 'Aplica tu tónico favorito para preparar la piel.' },
+      { n: '03', title: 'Aplicación', desc: `Aplica una pequeña cantidad de ${product.name} con suaves toques y mezcla hacia afuera.` },
+      { n: '04', title: 'Hidratación', desc: 'Sella con tu crema o gel hidratante.' },
+      { n: '05', title: 'Protección', desc: 'Durante el día, finaliza siempre con protector solar.' },
+    ];
+    accHow.innerHTML = `<div style="display:flex;flex-direction:column;gap:10px;">
+      ${steps.map(s => `<div style="display:flex;gap:10px;align-items:flex-start;">
+        <span style="font-size:11px;font-weight:800;color:var(--color-midcurrent-navy);opacity:0.4;padding-top:2px;min-width:24px;">${s.n}</span>
+        <div><div style="font-weight:700;font-size:13.5px;color:var(--color-midcurrent-navy);">${s.title}</div><div style="font-size:13px;">${s.desc}</div></div>
+      </div>`).join('')}
+    </div>`;
+  }
+
+  // Ingredientes
+  const accIng = document.getElementById('pdpAccordionIngredients');
+  if (accIng) {
+    accIng.innerHTML = `
+      <p style="margin-bottom:12px;">Fórmula limpia coreana con activos bio-compatibles:</p>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        ${product.keyIngredients.map(ing => `
+          <div style="padding:10px 14px;background:var(--color-morning-mist);border-radius:10px;border:1px solid var(--color-cloud-veil);">
+            <strong style="font-size:13.5px;color:var(--color-midcurrent-navy);">${ing}</strong>
+            <p style="font-size:12px;color:var(--color-slate-gray);margin:3px 0 0;">Ingrediente estrella de alta eficacia.</p>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+}
+
+function togglePdpAccordion(btn) {
+  const isOpen = btn.getAttribute('aria-expanded') === 'true';
+  const body = btn.nextElementSibling;
+  if (isOpen) {
+    btn.setAttribute('aria-expanded', 'false');
+    body.classList.remove('open');
+  } else {
+    btn.setAttribute('aria-expanded', 'true');
+    body.classList.add('open');
+  }
+}
+
+function pdpNavigate(dir) {
+  if (!pdpImages || pdpImages.length < 2) return;
+  currentPdpImageIndex = (currentPdpImageIndex + dir + pdpImages.length) % pdpImages.length;
+  setPdpActiveImage(currentPdpImageIndex);
+}
+
+function setPdpActiveImage(index) {
+  if (!pdpImages || !pdpImages[index]) return;
+  currentPdpImageIndex = index;
+  const mainImg = document.getElementById('pdpMainImg');
+  if (mainImg) {
+    mainImg.style.opacity = '0';
+    mainImg.style.transform = 'scale(0.97)';
+    setTimeout(() => {
+      mainImg.src = pdpImages[index];
+      mainImg.style.opacity = '1';
+      mainImg.style.transform = 'scale(1)';
+    }, 150);
+  }
+
+  document.querySelectorAll('.pdp-gallery-dot').forEach((dot, idx) => {
+    dot.classList.toggle('active', idx === index);
+  });
+}
+
+function changePdpQty(delta) {
+  currentPdpQty = Math.max(1, currentPdpQty + delta);
+  const qtyEl = document.getElementById('pdpQtyVal');
+  if (qtyEl) qtyEl.textContent = currentPdpQty;
+  renderPdpPrices();
+}
+
+function renderPdpPrices() {
+  if (!currentPdpProduct) return;
+  const priceEl = document.getElementById('pdpPriceDisplay');
+  const subtotalEl = document.getElementById('pdpSubtotalHint');
+
+  const pen = currentPdpProduct.pricePEN * currentPdpQty;
+  const usd = currentPdpProduct.priceUSD * currentPdpQty;
+  const formattedUnitPrice = formatPrice(currentPdpProduct.pricePEN, currentPdpProduct.priceUSD);
+  const formattedTotalPrice = `Total: ${formatPrice(pen, usd)}`;
+  const displayVal = currentPdpQty > 1 ? formattedTotalPrice : formattedUnitPrice;
+
+  if (priceEl) {
+    priceEl.textContent = displayVal;
+  }
+  if (subtotalEl && subtotalEl !== priceEl) {
+    subtotalEl.style.display = 'block';
+    subtotalEl.textContent = displayVal;
+  }
+
+  const btnCounter = document.getElementById('pdpBtnCounter');
+  if (btnCounter) {
+    btnCounter.textContent = currentPdpQty > 1 ? `(${currentPdpQty})` : '';
+  }
+}
+
+function addCurrentProductToCart() {
+  if (!currentPdpProduct) return;
+  addToCart(currentPdpProduct.id, currentPdpQty);
+  openCart();
+}
+
+function askCurrentProductWhatsApp() {
+  if (!currentPdpProduct) return;
+  const price = state.currency === 'USD' ? `$${currentPdpProduct.priceUSD} USD` : `S/. ${currentPdpProduct.pricePEN}`;
+  const msg = `¡Hola Maos Tacna! Deseo adquirir / consultar disponibilidad sobre "${currentPdpProduct.name}" (${currentPdpProduct.volume}) - ${price}. ¿Cómo realizo mi compra?`;
+  openWhatsAppDirect(msg);
+}
+
+function switchPdpTab(tabId) {
+  document.querySelectorAll('.pdp-tab-trigger').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.tab === tabId);
+  });
+  document.querySelectorAll('.pdp-tab-pane').forEach(pane => {
+    pane.classList.toggle('active', pane.id === `tab-${tabId}`);
+  });
+}
+
+function renderPdpRelatedProducts() {
+  const container = document.getElementById('pdpRelatedGrid');
+  if (!container || !currentPdpProduct) return;
+
+  // Filter products: prefer same category or brand, excluding current
+  let related = PRODUCTS_DATA.filter(p => p.id !== currentPdpProduct.id);
+  related.sort((a, b) => {
+    const aSameBrand = a.brand === currentPdpProduct.brand ? 2 : 0;
+    const bSameBrand = b.brand === currentPdpProduct.brand ? 2 : 0;
+    const aSameCat = a.category === currentPdpProduct.category ? 1 : 0;
+    const bSameCat = b.category === currentPdpProduct.category ? 1 : 0;
+    return (bSameBrand + bSameCat) - (aSameBrand + aSameCat);
+  });
+
+  const picks = related.slice(0, 6);
+
+  container.innerHTML = picks.map(product => {
+    const isWishlisted = state.wishlist.has(product.id);
+    const badgeHtml = product.tag ?
+      `<span class="card-badge ${product.bestSeller ? 'bestseller' : ''}">${product.tag}</span>` : '';
+    const productUrl = `producto.html?id=${encodeURIComponent(product.id)}`;
+
+    return `
+      <article class="product-card ${product.hoverImage ? 'has-hover-image' : ''}" data-id="${product.id}">
+        ${badgeHtml}
+        <button class="card-wishlist-btn ${isWishlisted ? 'active' : ''}" 
+                onclick="toggleWishlist('${product.id}')" 
+                title="${isWishlisted ? 'Quitar de favoritos' : 'Guardar en favoritos'}"
+                aria-label="Favorito">
+          <svg viewBox="0 0 24 24" fill="${isWishlisted ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2" width="16" height="16">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+        </button>
+
+        <a class="product-image-container" href="${productUrl}" aria-label="Ver detalles de ${product.name}">
+          <img class="product-img primary-img" src="${product.image}" alt="${product.name}" loading="lazy" />
+          ${product.hoverImage ? `<img class="product-img hover-img" src="${product.hoverImage}" alt="${product.name} vista secundaria" loading="lazy" />` : ''}
+          <button class="card-quick-add-bag" type="button" onclick="event.preventDefault(); event.stopPropagation(); addToCart('${product.id}')" aria-label="Añadir al carrito" title="Añadir al carrito">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+          </button>
+        </a>
+
+        <div class="product-info">
+          <span class="product-brand">${product.brand}</span>
+          <h3 class="product-name">
+            <a href="${productUrl}">${product.name}</a>
+          </h3>
+          
+          <div class="product-meta-row">
+            <span class="product-volume">${product.volume}</span>
+            <div class="product-rating">
+              <span class="rating-stars">★★★★★</span>
+              <span>(${product.rating})</span>
+            </div>
+          </div>
+
+          <div class="product-price-row">
+            <span class="product-price">${formatPrice(product.pricePEN, product.priceUSD)}</span>
+          </div>
+        </div>
+      </article>
+    `;
+  }).join('');
+
+  initPdpCarouselScroll();
+}
+
+function updateProductPagePrices() {
+  if (document.getElementById('pdpMain')) {
+    renderPdpPrices();
+    renderPdpRelatedProducts();
+  }
 }
 
 // Routine Quiz Modal Logic
@@ -1385,9 +1771,15 @@ function renderQuizResults() {
       ${recProducts.map((p, idx) => `
         <div class="routine-rec-item">
           <span class="routine-step-num">0${idx + 1}</span>
-          <img src="${p.image}" alt="${p.name}" style="width: 44px; height: 44px; object-fit: contain;" />
+          <a href="producto.html?id=${encodeURIComponent(p.id)}" style="display:flex; align-items:center;">
+            <img src="${p.image}" alt="${p.name}" style="width: 44px; height: 44px; object-fit: contain;" />
+          </a>
           <div class="routine-rec-info" style="flex: 1;">
-            <h5>${p.name}</h5>
+            <h5>
+              <a href="producto.html?id=${encodeURIComponent(p.id)}" style="color: inherit; text-decoration: none;">
+                ${p.name}
+              </a>
+            </h5>
             <span>${p.categoryLabel} • ${formatPrice(p.pricePEN, p.priceUSD)}</span>
           </div>
           <button class="btn-pill btn-pill-sm btn-pill-ghost" onclick="addToCart('${p.id}', 1)">+ Añadir</button>
@@ -1489,4 +1881,102 @@ function loadSavedState() {
   } catch (e) {
     console.warn("Storage load error", e);
   }
+}
+
+// Filter Drawer & Grid View Controls (A-dam layout)
+function openFilterDrawer() {
+  const drawer = document.getElementById('filterDrawer');
+  const backdrop = document.getElementById('filterDrawerBackdrop');
+  if (drawer) {
+    drawer.classList.add('open');
+    drawer.setAttribute('aria-hidden', 'false');
+  }
+  if (backdrop) backdrop.classList.add('active');
+  document.body.classList.add('filter-drawer-open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeFilterDrawer() {
+  const drawer = document.getElementById('filterDrawer');
+  const backdrop = document.getElementById('filterDrawerBackdrop');
+  if (drawer) {
+    drawer.classList.remove('open');
+    drawer.setAttribute('aria-hidden', 'true');
+  }
+  if (backdrop) backdrop.classList.remove('active');
+  document.body.classList.remove('filter-drawer-open');
+  document.body.style.overflow = '';
+}
+
+function setCatalogGrid(cols) {
+  const grid = document.getElementById('productsGrid');
+  const btn2 = document.getElementById('viewBtn2');
+  const btn1 = document.getElementById('viewBtn1');
+  if (!grid) return;
+  if (cols === 1) {
+    grid.classList.add('grid-1-col');
+    if (btn1) btn1.classList.add('active');
+    if (btn2) btn2.classList.remove('active');
+  } else {
+    grid.classList.remove('grid-1-col');
+    if (btn2) btn2.classList.add('active');
+    if (btn1) btn1.classList.remove('active');
+  }
+}
+
+// Related Products Carousel Functions (A-dam Style)
+function scrollPdpCarousel(dir) {
+  const track = document.getElementById('pdpRelatedGrid');
+  if (!track) return;
+  const card = track.querySelector('.product-card');
+  const amount = card ? card.offsetWidth + 16 : 280;
+  track.scrollBy({ left: dir * amount, behavior: 'smooth' });
+}
+
+function initPdpCarouselScroll() {
+  const track = document.getElementById('pdpRelatedGrid');
+  const thumb = document.getElementById('pdpCarouselThumb');
+  if (!track || !thumb) return;
+
+  function onScroll() {
+    const maxScroll = track.scrollWidth - track.clientWidth;
+    if (maxScroll <= 0) {
+      thumb.style.transform = 'translateX(0)';
+      return;
+    }
+    const trackWidth = 120;
+    const thumbWidth = 120 * 0.35;
+    const maxTranslate = trackWidth - thumbWidth;
+    const ratio = Math.min(1, Math.max(0, track.scrollLeft / maxScroll));
+    thumb.style.transform = `translateX(${ratio * maxTranslate}px)`;
+  }
+
+  track.removeEventListener('scroll', track._carouselScrollHandler);
+  track._carouselScrollHandler = onScroll;
+  track.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+}
+
+
+// Mobile Currency Buttons (new button-based currency switcher)
+function setMobileCurrency(currency) {
+  state.currency = currency;
+  localStorage.setItem('maos_currency', currency);
+
+  // Update button active states
+  const penBtn = document.getElementById('mobileCurrencyPEN');
+  const usdBtn = document.getElementById('mobileCurrencyUSD');
+  if (penBtn) penBtn.classList.toggle('active', currency === 'PEN');
+  if (usdBtn) usdBtn.classList.toggle('active', currency === 'USD');
+
+  // Sync legacy select (producto.html)
+  const legacySelect = document.getElementById('mobileCurrencySelect');
+  if (legacySelect) legacySelect.value = currency;
+
+  // Sync desktop toggle
+  setCurrencyToggleState(currency);
+  renderProducts();
+  updateProductPagePrices();
+  updateCartUI();
+  showToast(`Moneda cambiada a ${currency === 'PEN' ? 'Soles (S/.)' : 'Dólares ($ USD)'}`);
 }
