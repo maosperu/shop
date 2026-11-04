@@ -1258,6 +1258,33 @@ textarea {
   text-transform: lowercase;
 }
 
+.brand-logo-text.skin1004 {
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.brand-logo-text.cosrx {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.brand-logo-text.torriden {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.brand-logo-text.medicube {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: lowercase;
+}
+
 /* ==========================================================================
    PRODUCT CATALOG SECTION & CONTROLS
    ========================================================================== */

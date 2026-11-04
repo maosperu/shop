@@ -195,7 +195,7 @@
             <line x1="4" y1="10" x2="16" y2="10"></line>
             <line x1="7" y1="15" x2="13" y2="15"></line>
           </svg>
-          <span class="toolbar-filter-text">Filtrado y ordenación <strong id="filterToolbarCount">(14)</strong></span>
+          <span class="toolbar-filter-text">Filtrado y ordenación <strong id="filterToolbarCount">(25)</strong></span>
         </button>
 
         <div class="toolbar-view-switcher">
@@ -301,7 +301,7 @@
         <label class="filter-drawer-label" for="categorySelect">Categoría</label>
         <div class="filter-select-wrapper drawer-select-wrap">
           <select class="filter-select-pill drawer-select" id="categorySelect" aria-label="Filtrar por categoría">
-            <option value="all">Todas las Categorías (14)</option>
+            <option value="all">Todas las Categorías (25)</option>
             <option value="serums">Sérums & Tratamientos</option>
             <option value="cremas">Cremas & Hidratantes</option>
             <option value="retinoides">Retinoides & Poros</option>
@@ -320,11 +320,15 @@
           <select class="filter-select-pill drawer-select" id="brandSelect" aria-label="Filtrar por marca">
             <option value="all">Todas las Marcas</option>
             <option value="Anua">Anua</option>
-            <option value="Dr. Althea">Dr. Althea</option>
-            <option value="Haruharu WONDER">Haruharu WONDER</option>
             <option value="Arencia">Arencia</option>
             <option value="CELIMAX">CELIMAX</option>
+            <option value="COSRX">COSRX</option>
+            <option value="Dr. Althea">Dr. Althea</option>
+            <option value="Haruharu WONDER">Haruharu WONDER</option>
+            <option value="medicube">medicube</option>
             <option value="mixsoon">mixsoon</option>
+            <option value="SKIN1004">SKIN1004</option>
+            <option value="Torriden">Torriden</option>
           </select>
         </div>
       </div>
@@ -351,7 +355,7 @@
         Limpiar Filtros
       </button>
       <button type="button" class="btn-pill btn-pill-primary btn-drawer-apply" onclick="closeFilterDrawer()">
-        <span>Ver Resultados</span> <span id="productsCount">14 productos</span>
+        <span>Ver Resultados</span> <span id="productsCount">25 productos</span>
       </button>
     </div>
   </aside>
@@ -536,6 +540,10 @@
             <li><a href="tienda.html" onclick="sessionStorage.setItem('filterBrand','Arencia');">Arencia</a></li>
             <li><a href="tienda.html" onclick="sessionStorage.setItem('filterBrand','mixsoon');">mixsoon</a></li>
             <li><a href="tienda.html" onclick="sessionStorage.setItem('filterBrand','CELIMAX');">CELIMAX</a></li>
+            <li><a href="tienda.html" onclick="sessionStorage.setItem('filterBrand','COSRX');">COSRX</a></li>
+            <li><a href="tienda.html" onclick="sessionStorage.setItem('filterBrand','medicube');">medicube</a></li>
+            <li><a href="tienda.html" onclick="sessionStorage.setItem('filterBrand','SKIN1004');">SKIN1004</a></li>
+            <li><a href="tienda.html" onclick="sessionStorage.setItem('filterBrand','Torriden');">Torriden</a></li>
           </ul>
         </div>
 
@@ -578,7 +586,7 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="app.js?v=15"></script>
+  <script src="app.js?v=21"></script>
 </body>
 
 </html>
