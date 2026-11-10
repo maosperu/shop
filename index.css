@@ -661,7 +661,8 @@ textarea {
 }
 
 .mobile-drawer-bottom-bar {
-  display: none; /* replaced by .mobile-currency-row */
+  display: none;
+  /* replaced by .mobile-currency-row */
 }
 
 .mobile-currency-select-wrap {
@@ -795,7 +796,8 @@ textarea {
   transform: translateY(0);
 }
 
-@media (hover: none), (max-width: 768px) {
+@media (hover: none),
+(max-width: 768px) {
   .card-quick-add-bag {
     opacity: 1;
     transform: translateY(0);
@@ -1090,10 +1092,12 @@ textarea {
     text-align: center;
     gap: 16px;
   }
+
   .quiz-teaser-strip-left {
     flex-direction: column;
     text-align: center;
   }
+
   .quiz-teaser-strip-text {
     align-items: center;
     text-align: center;
@@ -1450,78 +1454,7 @@ textarea {
   background-image: url("data:image/svg2+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
 }
 
-/* Active Filters Indicator Chips */
-.active-filters-bar {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: 14px;
-  padding: 6px 12px;
-  background-color: rgba(0, 14, 31, 0.03);
-  border-radius: var(--radius-buttons);
-}
 
-.active-filters-label {
-  font-family: var(--font-display);
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--color-slate-gray);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.active-filters-chips {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.active-filter-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background-color: var(--color-paper-white);
-  border: 1px solid var(--color-cloud-veil);
-  border-radius: var(--radius-tags);
-  padding: 4px 12px;
-  font-family: var(--font-display);
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--color-midcurrent-navy);
-}
-
-.active-filter-chip button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: var(--color-slate-gray);
-  font-size: 14px;
-  padding: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: color var(--transition-fast);
-}
-
-.active-filter-chip button:hover {
-  color: var(--color-deep-cobalt);
-}
-
-.btn-clear-all-filters {
-  background: none;
-  border: none;
-  font-family: var(--font-display);
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--color-deep-cobalt);
-  cursor: pointer;
-  text-decoration: underline;
-  padding: 4px 8px;
-  margin-left: auto;
-  transition: opacity var(--transition-fast);
-}
 
 .btn-clear-all-filters:hover {
   opacity: 0.75;
@@ -1536,6 +1469,7 @@ textarea {
   gap: clamp(12px, 1.5vw, 20px);
   width: 100%;
   box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
 .product-card {
@@ -3399,6 +3333,7 @@ textarea {
   color: var(--color-slate-gray);
   line-height: 1.6;
 }
+
 /* Inline hero for tienda page (A-dam style: title above filters) */
 .catalog-page-hero-inline {
   padding: 36px 0 24px;
@@ -5389,4 +5324,213 @@ body.pdp-page {
 
 body.pdp-page .site-footer {
   background-color: #ffffff !important;
+}
+
+
+/* Filter Drawer: Search input should not stretch vertically */
+.drawer-search.search-input-pill {
+  flex: none;
+  width: 100%;
+  min-width: 0;
+}
+
+.drawer-search.search-input-pill input {
+  width: 100%;
+}
+
+/* Drawer select arrow fix */
+.drawer-select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23666e79' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 14px;
+}
+
+.drawer-select.active-filter {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23000e1f' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  border-color: var(--color-midcurrent-navy);
+  background-color: #f5f8ff;
+  color: var(--color-midcurrent-navy);
+  font-weight: 700;
+}
+
+/* Active filter chips — improved aesthetics */
+.active-filters-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  background-color: transparent;
+  border-top: 1px solid var(--color-cloud-veil);
+  border-bottom: 1px solid var(--color-cloud-veil);
+  margin-bottom: 4px;
+}
+
+.active-filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #f0f4ff;
+  border: 1px solid rgba(196, 39, 92, 0.2);
+  border-radius: 99px;
+  padding: 5px 10px 5px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-midcurrent-navy);
+  transition: background 0.15s ease;
+}
+
+.active-filter-chip:hover {
+  background: #e8eeff;
+}
+
+.active-filter-chip button {
+  background: rgba(0, 0, 0, 0.08);
+  border: none;
+  cursor: pointer;
+  color: var(--color-midcurrent-navy);
+  font-size: 11px;
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 0;
+  transition: background 0.15s ease;
+}
+
+.active-filter-chip button:hover {
+  background: rgba(196, 39, 92, 0.15);
+  color: var(--color-deep-cobalt);
+}
+
+.btn-clear-all-filters {
+  margin-left: auto;
+  background: none;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-deep-cobalt);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  padding: 2px 0;
+  transition: opacity 0.15s ease;
+  white-space: nowrap;
+}
+
+.btn-clear-all-filters:hover {
+  opacity: 0.75;
+}
+
+/* Toolbar count badge when filters are active */
+#filterToolbarCount {
+  transition: color 0.2s ease;
+}
+
+/* Filter drawer: Reduce gap in body for more compact look */
+.filter-drawer-body {
+  gap: 24px;
+}
+
+/* Empty state improvement */
+.products-empty-state {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid var(--color-cloud-veil);
+}
+
+.products-empty-state svg {
+  color: var(--color-cloud-veil);
+  margin-bottom: 16px;
+}
+
+.products-empty-state p {
+  font-size: 15px;
+  color: var(--color-slate-gray);
+  margin-bottom: 20px;
+  max-width: 280px;
+  line-height: 1.5;
+}
+
+/* ===== QUIZ PROGRESS BAR ===== */
+.quiz-progress-wrap {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.quiz-progress-track {
+  height: 4px;
+  background: var(--color-cloud-veil);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.quiz-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-deep-cobalt), #e5467a);
+  border-radius: 99px;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+#quizProgressLabel {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-slate-gray);
+}
+
+/* Diagnosis header */
+.quiz-diagnosis-header {
+  margin-bottom: 16px;
+}
+
+.quiz-diagnosis-eyebrow {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-deep-cobalt);
+  margin-bottom: 4px;
+}
+
+/* Step label inside routine items */
+.routine-step-num-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+  min-width: 36px;
+}
+
+.routine-step-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-slate-gray);
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Quiz card scroll */
+.quiz-card {
+  max-height: 90vh;
+  overflow-y: auto;
 }

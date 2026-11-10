@@ -15,8 +15,8 @@ const PRODUCTS_DATA = [
     "shortName": "Niacinamide 10% + TXA 4% Serum",
     "category": "serums",
     "categoryLabel": "Sérum & Tratamiento",
-    "pricePEN": 79,
-    "priceUSD": 21,
+    "pricePEN": 90,
+    "priceUSD": 26,
     "rating": 4.9,
     "reviewsCount": 142,
     "volume": "30 ml",
@@ -45,7 +45,7 @@ const PRODUCTS_DATA = [
     "shortName": "Retinal Booster Shot",
     "category": "retinoides",
     "categoryLabel": "Retinoides & Antiedad",
-    "pricePEN": 85,
+    "pricePEN": 80,
     "priceUSD": 23,
     "rating": 4.8,
     "reviewsCount": 89,
@@ -75,8 +75,8 @@ const PRODUCTS_DATA = [
     "shortName": "Vitamin C Booster Shot",
     "category": "vitamin-c",
     "categoryLabel": "Vitamina C & Luminosidad",
-    "pricePEN": 92,
-    "priceUSD": 25,
+    "pricePEN": 80,
+    "priceUSD": 23,
     "rating": 4.9,
     "reviewsCount": 76,
     "volume": "30 g",
@@ -105,8 +105,8 @@ const PRODUCTS_DATA = [
     "shortName": "Azelaic Acid 10% Serum",
     "category": "serums",
     "categoryLabel": "Sérum Calmante & Anti-Rojeces",
-    "pricePEN": 82,
-    "priceUSD": 22,
+    "pricePEN": 90,
+    "priceUSD": 26,
     "rating": 4.9,
     "reviewsCount": 118,
     "volume": "30 ml",
@@ -135,8 +135,8 @@ const PRODUCTS_DATA = [
     "shortName": "The Vita-A Retinal Shot",
     "category": "retinoides",
     "categoryLabel": "Retinoides & Poros",
-    "pricePEN": 49,
-    "priceUSD": 13,
+    "pricePEN": 75,
+    "priceUSD": 22,
     "rating": 4.9,
     "reviewsCount": 64,
     "volume": "30 ml",
@@ -165,8 +165,8 @@ const PRODUCTS_DATA = [
     "shortName": "147 Barrier Cream",
     "category": "cremas",
     "categoryLabel": "Crema Reparadora de Barrera",
-    "pricePEN": 76,
-    "priceUSD": 21,
+    "pricePEN": 82,
+    "priceUSD": 24,
     "rating": 4.8,
     "reviewsCount": 95,
     "volume": "50 ml",
@@ -195,8 +195,8 @@ const PRODUCTS_DATA = [
     "shortName": "345 Relief Cream",
     "category": "cremas",
     "categoryLabel": "Crema Hidratante & Post-Acné",
-    "pricePEN": 99,
-    "priceUSD": 27,
+    "pricePEN": 85,
+    "priceUSD": 25,
     "rating": 5,
     "reviewsCount": 230,
     "volume": "50 ml",
@@ -226,8 +226,8 @@ const PRODUCTS_DATA = [
     "shortName": "345 Relief Cream Mist",
     "category": "brumas",
     "categoryLabel": "Bruma Hidratante Bifásica",
-    "pricePEN": 78,
-    "priceUSD": 21,
+    "pricePEN": 85,
+    "priceUSD": 25,
     "rating": 4.8,
     "reviewsCount": 82,
     "volume": "100 ml",
@@ -256,8 +256,8 @@ const PRODUCTS_DATA = [
     "shortName": "Aqua Marine Deep Serum",
     "category": "serums",
     "categoryLabel": "Sérum Hidratante Marino",
-    "pricePEN": 42,
-    "priceUSD": 11,
+    "pricePEN": 72,
+    "priceUSD": 21,
     "rating": 4.7,
     "reviewsCount": 51,
     "volume": "30 ml",
@@ -286,8 +286,8 @@ const PRODUCTS_DATA = [
     "shortName": "Gentle Vitamin C Serum",
     "category": "vitamin-c",
     "categoryLabel": "Vitamina C Suave & Anti-Manchas",
-    "pricePEN": 82,
-    "priceUSD": 22,
+    "pricePEN": 80,
+    "priceUSD": 23,
     "rating": 4.9,
     "reviewsCount": 104,
     "volume": "30 ml",
@@ -316,8 +316,8 @@ const PRODUCTS_DATA = [
     "shortName": "Vitamin C Boosting Serum",
     "category": "vitamin-c",
     "categoryLabel": "Vitamina C & Luminosidad",
-    "pricePEN": 99,
-    "priceUSD": 27,
+    "pricePEN": 80,
+    "priceUSD": 23,
     "rating": 4.9,
     "reviewsCount": 167,
     "volume": "30 ml",
@@ -346,8 +346,8 @@ const PRODUCTS_DATA = [
     "shortName": "Black Rice Cleansing Gel",
     "category": "limpieza",
     "categoryLabel": "Gel Limpiador pH 5.5",
-    "pricePEN": 58,
-    "priceUSD": 16,
+    "pricePEN": 62,
+    "priceUSD": 18,
     "rating": 4.8,
     "reviewsCount": 88,
     "volume": "100 ml",
@@ -375,7 +375,7 @@ const PRODUCTS_DATA = [
     "shortName": "Black Rice Cleansing Oil",
     "category": "limpieza",
     "categoryLabel": "Aceite Limpiador Botánico",
-    "pricePEN": 82,
+    "pricePEN": 75,
     "priceUSD": 22,
     "rating": 4.9,
     "reviewsCount": 145,
@@ -405,8 +405,8 @@ const PRODUCTS_DATA = [
     "shortName": "Bean Essential Set",
     "category": "sets",
     "categoryLabel": "Set Especial de Soja Fermentada",
-    "pricePEN": 92,
-    "priceUSD": 27,
+    "pricePEN": 120,
+    "priceUSD": 35,
     "rating": 5,
     "reviewsCount": 210,
     "volume": "Bean Essence 50 ml + Bean Cream 50 ml",
@@ -436,7 +436,7 @@ const PRODUCTS_DATA = [
     "category": "brumas",
     "categoryLabel": "Tónico Calmante & Anti-Rojeces",
     "pricePEN": 85,
-    "priceUSD": 23,
+    "priceUSD": 25,
     "rating": 4.9,
     "reviewsCount": 420,
     "volume": "250 ml",
@@ -465,8 +465,8 @@ const PRODUCTS_DATA = [
     "shortName": "Heartleaf Pore Cleansing Oil",
     "category": "limpieza",
     "categoryLabel": "Aceite Desmaquillante & Poros",
-    "pricePEN": 82,
-    "priceUSD": 22,
+    "pricePEN": 85,
+    "priceUSD": 25,
     "rating": 4.9,
     "reviewsCount": 388,
     "volume": "200 ml",
@@ -495,8 +495,8 @@ const PRODUCTS_DATA = [
     "shortName": "Advanced Snail 96 Essence",
     "category": "serums",
     "categoryLabel": "Esencia Reparadora & Glass Skin",
-    "pricePEN": 79,
-    "priceUSD": 21,
+    "pricePEN": 75,
+    "priceUSD": 22,
     "rating": 4.9,
     "reviewsCount": 540,
     "volume": "100 ml",
@@ -556,8 +556,8 @@ const PRODUCTS_DATA = [
     "shortName": "PDRN Pink Collagen Mask",
     "category": "cremas",
     "categoryLabel": "Mascarilla Hidrogel Reafirmante",
-    "pricePEN": 32,
-    "priceUSD": 9,
+    "pricePEN": 19,
+    "priceUSD": 6,
     "rating": 4.9,
     "reviewsCount": 115,
     "volume": "28 g",
@@ -586,8 +586,8 @@ const PRODUCTS_DATA = [
     "shortName": "PDRN Pink Peptide Serum",
     "category": "serums",
     "categoryLabel": "Ampoule Regeneradora & Manchas",
-    "pricePEN": 52,
-    "priceUSD": 15,
+    "pricePEN": 85,
+    "priceUSD": 25,
     "rating": 4.9,
     "reviewsCount": 168,
     "volume": "30 ml",
@@ -616,8 +616,8 @@ const PRODUCTS_DATA = [
     "shortName": "Centella Double Cleansing Duo",
     "category": "sets",
     "categoryLabel": "Dúo Doble Limpieza Calmante",
-    "pricePEN": 115,
-    "priceUSD": 33,
+    "pricePEN": 95,
+    "priceUSD": 28,
     "rating": 5,
     "reviewsCount": 210,
     "volume": "200 ml + 125 ml",
@@ -675,8 +675,8 @@ const PRODUCTS_DATA = [
     "shortName": "Poremizing 4-Piece Travel Kit",
     "category": "sets",
     "categoryLabel": "Set de Viaje Minimizador de Poros",
-    "pricePEN": 75,
-    "priceUSD": 22,
+    "pricePEN": 92,
+    "priceUSD": 27,
     "rating": 4.9,
     "reviewsCount": 152,
     "volume": "4 x Miniaturas (Cleanser + Toner + Ampoule + Gel)",
@@ -705,8 +705,8 @@ const PRODUCTS_DATA = [
     "shortName": "Hyalu-Cica Sun Serum SPF50+",
     "category": "serums",
     "categoryLabel": "Protector Solar Sérum Hidratante",
-    "pricePEN": 65,
-    "priceUSD": 19,
+    "pricePEN": 70,
+    "priceUSD": 20,
     "rating": 5,
     "reviewsCount": 620,
     "volume": "50 ml",
@@ -735,8 +735,8 @@ const PRODUCTS_DATA = [
     "shortName": "DIVE-IN Hyaluronic Serum",
     "category": "serums",
     "categoryLabel": "Sérum Hidratación 5D Celular",
-    "pricePEN": 88,
-    "priceUSD": 26,
+    "pricePEN": 85,
+    "priceUSD": 25,
     "rating": 4.9,
     "reviewsCount": 480,
     "volume": "50 ml",
@@ -786,7 +786,7 @@ let currentQuickViewQty = 1;
 const ANNOUNCEMENTS = [
   "ENVÍO GRATIS EN PEDIDOS SUPERIORES A S/. 300 • ENTREGAS EN TACNA Y ENVÍOS A TODO EL PERÚ",
   "ASESORÍA PERSONALIZADA DE RUTINA K-BEAUTY VÍA WHATSAPP (+51 908 794 517)",
-  "PRODUCTOS 100% ORIGINALES DIRECTOS DE SEÚL • REGALO MINIATURA EN CADA COMPRA"
+  "PRODUCTOS 100% ORIGINALES DIRECTOS DE SEÚL"
 ];
 
 // Initialize on DOM Ready
@@ -1322,13 +1322,32 @@ function renderProducts() {
   }
   const filterToolbarCount = document.getElementById('filterToolbarCount');
   if (filterToolbarCount) {
-    filterToolbarCount.textContent = `(${filtered.length})`;
+    // Count active filters (not product count)
+    const activeCount = [
+      state.activeCategory !== 'all',
+      state.activeBrand !== 'all',
+      state.activeConcern !== 'all',
+      state.sortBy !== 'featured',
+      !!state.searchQuery
+    ].filter(Boolean).length;
+    if (activeCount > 0) {
+      filterToolbarCount.textContent = `(${activeCount})`;
+      filterToolbarCount.style.color = 'var(--color-deep-cobalt)';
+    } else {
+      filterToolbarCount.textContent = `(${filtered.length})`;
+      filterToolbarCount.style.color = '';
+    }
   }
 
   if (filtered.length === 0) {
     grid.innerHTML = `
-      <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; background: #fff; border: 1px solid var(--color-cloud-veil);">
-        <p style="font-size: 16px; color: var(--color-slate-gray); margin-bottom: 16px;">No encontramos productos con los filtros seleccionados.</p>
+      <div class="products-empty-state">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          <line x1="8" y1="11" x2="14" y2="11"></line>
+        </svg>
+        <p>No encontramos productos con los filtros seleccionados.<br><span style="font-size:13px;">Prueba con otros filtros o limpia la búsqueda.</span></p>
         <button class="btn-pill btn-pill-primary" onclick="resetFilters()">Restablecer Filtros</button>
       </div>
     `;
@@ -2105,11 +2124,16 @@ function updateProductPagePrices() {
   }
 }
 
-// Routine Quiz Modal Logic
+// Routine Quiz Modal Logic — Diagnóstico Dermatológico (5 pasos)
 let quizAnswers = {
-  skinType: null,
-  mainGoal: null
+  skinType: null,     // 'grasa' | 'mixta' | 'seca' | 'sensible'
+  sensitivity: null,  // 'alta' | 'moderada' | 'baja'
+  mainGoal: null,     // 'manchas' | 'rojeces' | 'antiedad' | 'hidratacion' | 'poros'
+  lifestyle: null,    // 'sol' | 'maquillaje' | 'noche' | 'minimalista'
+  skinAge: null       // 'teen' | 'adulta' | 'madura'
 };
+
+const QUIZ_TOTAL_STEPS = 5;
 
 function openQuiz() {
   const modal = document.getElementById('quizModal');
@@ -2127,7 +2151,7 @@ function closeQuiz() {
 }
 
 function resetQuizStep() {
-  quizAnswers = { skinType: null, mainGoal: null };
+  quizAnswers = { skinType: null, sensitivity: null, mainGoal: null, lifestyle: null, skinAge: null };
   showQuizStep(1);
 }
 
@@ -2135,77 +2159,213 @@ function showQuizStep(stepNumber) {
   document.querySelectorAll('.quiz-step').forEach(step => step.classList.remove('active'));
   const target = document.getElementById(`quizStep${stepNumber}`);
   if (target) target.classList.add('active');
+  updateQuizProgress(stepNumber);
 }
 
+function updateQuizProgress(currentStep) {
+  const bar = document.getElementById('quizProgressBar');
+  const label = document.getElementById('quizProgressLabel');
+  if (!bar) return;
+  const pct = currentStep <= QUIZ_TOTAL_STEPS
+    ? Math.round(((currentStep - 1) / QUIZ_TOTAL_STEPS) * 100)
+    : 100;
+  bar.style.width = pct + '%';
+  if (label) {
+    label.textContent = currentStep <= QUIZ_TOTAL_STEPS
+      ? `Paso ${currentStep} de ${QUIZ_TOTAL_STEPS}`
+      : 'Diagnóstico listo';
+  }
+}
+
+// Step navigation
 function selectQuizType(type) {
   quizAnswers.skinType = type;
   showQuizStep(2);
 }
 
+function selectQuizSensitivity(val) {
+  quizAnswers.sensitivity = val;
+  showQuizStep(3);
+}
+
 function selectQuizGoal(goal) {
   quizAnswers.mainGoal = goal;
+  showQuizStep(4);
+}
+
+function selectQuizLifestyle(val) {
+  quizAnswers.lifestyle = val;
+  showQuizStep(5);
+}
+
+function selectQuizSkinAge(val) {
+  quizAnswers.skinAge = val;
   renderQuizResults();
-  showQuizStep(3);
+  updateQuizProgress(6); // "done"
+  showQuizStep(6);
+}
+
+// ─── Prescription Engine ────────────────────────────────────────────────────
+function prescribeRoutine() {
+  const { skinType, sensitivity, mainGoal, lifestyle, skinAge } = quizAnswers;
+  const isOily = skinType === 'grasa' || skinType === 'mixta';
+  const isDry = skinType === 'seca';
+  const isSens = skinType === 'sensible' || sensitivity === 'alta';
+  const isMature = skinAge === 'madura';
+  const isAdult = skinAge === 'adulta';
+  const wearsMakeup = lifestyle === 'maquillaje';
+  const lovesNight = lifestyle === 'noche';
+  const needsSPF = lifestyle === 'sol';
+
+  // ── PASO 1: Limpieza (always a double-cleanse oil/gel) ───────────────────
+  let cleanser1, cleanser2;
+  if (isOily && wearsMakeup) {
+    cleanser1 = 'anua-heartleaf-pore-control-cleansing-oil';
+    cleanser2 = 'haruharu-black-rice-moisture-cleansing-gel';
+  } else if (isOily && isSens) {
+    cleanser1 = 'skin1004-madagascar-centella-double-cleansing-duo';
+    cleanser2 = null;
+  } else if (isOily) {
+    cleanser1 = 'anua-heartleaf-pore-control-cleansing-oil';
+    cleanser2 = 'haruharu-black-rice-moisture-cleansing-gel';
+  } else if (isSens || isDry) {
+    cleanser1 = 'haruharu-black-rice-cleansing-oil';
+    cleanser2 = 'haruharu-black-rice-moisture-cleansing-gel';
+  } else {
+    cleanser1 = 'haruharu-black-rice-cleansing-oil';
+    cleanser2 = 'haruharu-black-rice-moisture-cleansing-gel';
+  }
+
+  // ── PASO 2: Tónico / Esencia hidratante ─────────────────────────────────
+  let toner;
+  if (mainGoal === 'rojeces' || isSens) {
+    toner = 'anua-heartleaf-77-soothing-toner';
+  } else if (mainGoal === 'antiedad' || (isMature && mainGoal !== 'poros')) {
+    toner = 'cosrx-advanced-snail-96-mucin-essence';
+  } else if (mainGoal === 'poros') {
+    toner = 'anua-heartleaf-77-soothing-toner';
+  } else if (mainGoal === 'hidratacion') {
+    toner = 'cosrx-advanced-snail-96-mucin-essence';
+  } else {
+    toner = 'cosrx-advanced-snail-96-mucin-essence';
+  }
+
+  // ── PASO 3: Sérum activo (protagonista del diagnóstico) ──────────────────
+  let activeSerum;
+  if (mainGoal === 'manchas') {
+    if (isSens) activeSerum = 'dr-althea-gentle-vitamin-c-serum';
+    else if (isAdult || isMature) activeSerum = 'anua-niacinamide-10-txa-4';
+    else activeSerum = 'dr-althea-vitamin-c-boosting-serum';
+  } else if (mainGoal === 'rojeces') {
+    activeSerum = 'anua-azelaic-acid-10-hyaluron';
+  } else if (mainGoal === 'antiedad') {
+    if (isSens) activeSerum = 'medicube-pdrn-pink-peptide-serum';
+    else if (lovesNight && !isSens) activeSerum = 'arencia-retinal-booster-shot';
+    else if (isMature) activeSerum = 'medicube-egf-nad-firming-serum';
+    else activeSerum = 'arencia-retinal-booster-shot';
+  } else if (mainGoal === 'hidratacion') {
+    activeSerum = 'torriden-dive-in-hyaluronic-acid-serum';
+  } else {
+    // poros
+    if (lovesNight) activeSerum = 'celimax-vita-a-retinal-shot';
+    else if (isSens) activeSerum = 'anua-azelaic-acid-10-hyaluron';
+    else activeSerum = 'arencia-retinal-booster-shot';
+  }
+
+  // ── PASO 4: Crema / Hidratante ───────────────────────────────────────────
+  let moisturizer;
+  if (isDry || isSens) {
+    moisturizer = 'dr-althea-147-barrier-cream';
+  } else if (mainGoal === 'antiedad' || isMature) {
+    moisturizer = 'mixsoon-bean-essential-skincare-set';
+  } else if (isOily && mainGoal === 'poros') {
+    moisturizer = 'skin1004-centella-poremizing-travel-kit';
+  } else {
+    moisturizer = 'dr-althea-345-relief-cream';
+  }
+
+  // ── PASO 5: Protector solar / Tratamiento especial ───────────────────────
+  let special;
+  if (needsSPF || lifestyle === 'sol') {
+    special = 'skin1004-hyalu-cica-water-fit-sun-serum';
+  } else if (mainGoal === 'antiedad' && isMature) {
+    special = 'medicube-pdrn-pink-collagen-gel-mask';
+  } else if (mainGoal === 'poros') {
+    special = 'skin1004-centella-poremizing-clay-stick-mask';
+  } else if (mainGoal === 'manchas' && !isSens) {
+    special = 'arencia-vitamin-c-booster-shot';
+  } else if (mainGoal === 'hidratacion') {
+    special = 'dr-althea-aqua-marine-deep-serum';
+  } else {
+    special = 'skin1004-hyalu-cica-water-fit-sun-serum';
+  }
+
+  // Build ordered routine
+  const steps = [];
+  if (cleanser1) steps.push({ id: cleanser1, label: 'Limpieza 1' });
+  if (cleanser2) steps.push({ id: cleanser2, label: 'Limpieza 2' });
+  steps.push({ id: toner, label: 'Tónico / Esencia' });
+  steps.push({ id: activeSerum, label: 'Sérum Activo' });
+  steps.push({ id: moisturizer, label: 'Hidratante' });
+  steps.push({ id: special, label: lifestyle === 'sol' ? 'Protector Solar' : 'Tratamiento Especial' });
+
+  return steps;
 }
 
 function renderQuizResults() {
   const box = document.getElementById('quizResultsContainer');
   if (!box) return;
 
-  let recommendedIds = [];
+  const routine = prescribeRoutine();
+  const ids = routine.map(r => r.id);
 
-  if (quizAnswers.mainGoal === 'manchas') {
-    recommendedIds = [
-      'haruharu-black-rice-cleansing-oil',
-      'anua-niacinamide-10-txa-4',
-      'dr-althea-345-relief-cream'
-    ];
-  } else if (quizAnswers.mainGoal === 'rojeces') {
-    recommendedIds = [
-      'haruharu-black-rice-moisture-cleansing-gel',
-      'anua-azelaic-acid-10-hyaluron',
-      'dr-althea-345-relief-cream'
-    ];
-  } else if (quizAnswers.mainGoal === 'antiedad') {
-    recommendedIds = [
-      'haruharu-black-rice-cleansing-oil',
-      'arencia-retinal-booster-shot',
-      'mixsoon-bean-essential-skincare-set'
-    ];
-  } else {
-    recommendedIds = [
-      'dr-althea-345-relief-cream-mist',
-      'dr-althea-aqua-marine-deep-serum',
-      'dr-althea-147-barrier-cream'
-    ];
-  }
-
-  const recProducts = PRODUCTS_DATA.filter(p => recommendedIds.includes(p.id));
+  // Build diagnosis label
+  const goalLabels = {
+    manchas: 'Despigmentación & Luminosidad',
+    rojeces: 'Calma & Reparación de Barrera',
+    antiedad: 'Firmeza & Regeneración Celular',
+    hidratacion: 'Hidratación 5D & Glass Skin',
+    poros: 'Refinación de Poros & Textura'
+  };
+  const diagLabel = goalLabels[quizAnswers.mainGoal] || 'Equilibrio & Bienestar';
 
   box.innerHTML = `
-    <h4 class="quiz-results-title">✨ Tu Rutina K-Beauty Personalizada:</h4>
-    <div class="routine-recommended-list">
-      ${recProducts.map((p, idx) => `
-        <div class="routine-rec-item">
-          <span class="routine-step-num">0${idx + 1}</span>
-          <a href="producto.html?id=${encodeURIComponent(p.id)}" style="display:flex; align-items:center;">
-            <img src="${p.image}" alt="${p.name}" style="width: 44px; height: 44px; object-fit: contain;" />
-          </a>
-          <div class="routine-rec-info" style="flex: 1;">
-            <h5>
-              <a href="producto.html?id=${encodeURIComponent(p.id)}" style="color: inherit; text-decoration: none;">
-                ${p.name}
-              </a>
-            </h5>
-            <span>${p.categoryLabel} • ${formatPrice(p.pricePEN, p.priceUSD)}</span>
-          </div>
-          <button class="btn-pill btn-pill-sm btn-pill-ghost" onclick="addToCart('${p.id}', 1)">+ Añadir</button>
-        </div>
-      `).join('')}
+    <div class="quiz-diagnosis-header">
+      <span class="quiz-diagnosis-eyebrow">Tu diagnóstico dermatológico</span>
+      <h4 class="quiz-results-title">✦ ${diagLabel}</h4>
+      <p style="font-size: 13px; color: var(--color-slate-gray); margin-bottom: 20px; line-height: 1.6;">
+        Rutina de <strong>${routine.length} pasos</strong> formulada con activos clínicos coreanos sincronizados para tu perfil cutáneo:
+      </p>
     </div>
-    <div style="margin-top: 18px; display: flex; gap: 10px; flex-wrap: wrap;">
-      <button class="btn-pill btn-pill-primary" style="flex: 1;" onclick="addEntireRoutine('${recommendedIds.join(',')}')">
-        Añadir Rutina Completa al Carrito
+    <div class="routine-recommended-list">
+      ${routine.map((step, idx) => {
+    const p = PRODUCTS_DATA.find(pr => pr.id === step.id);
+    if (!p) return '';
+    return `
+          <div class="routine-rec-item">
+            <div class="routine-step-num-wrap">
+              <span class="routine-step-num">${String(idx + 1).padStart(2, '0')}</span>
+              <span class="routine-step-label">${step.label}</span>
+            </div>
+            <a href="producto.html?id=${encodeURIComponent(p.id)}" style="display:flex; align-items:center; flex-shrink:0;">
+              <img src="${p.image}" alt="${p.name}" style="width: 48px; height: 48px; object-fit: contain;" />
+            </a>
+            <div class="routine-rec-info" style="flex: 1; min-width: 0;">
+              <h5>
+                <a href="producto.html?id=${encodeURIComponent(p.id)}" style="color: inherit; text-decoration: none;">
+                  ${p.name}
+                </a>
+              </h5>
+              <span>${p.categoryLabel} • ${formatPrice(p.pricePEN, p.priceUSD)}</span>
+            </div>
+            <button class="btn-pill btn-pill-sm btn-pill-ghost" onclick="addToCart('${p.id}', 1)">+ Añadir</button>
+          </div>
+        `;
+  }).join('')}
+    </div>
+    <div style="margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
+      <button class="btn-pill btn-pill-primary" style="flex: 1;" onclick="addEntireRoutine('${ids.join(',')}')">
+        🛍 Añadir Rutina Completa
       </button>
       <button class="btn-pill btn-pill-ghost" onclick="resetQuizStep()">
         Repetir Test

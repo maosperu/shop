@@ -450,43 +450,142 @@
     </div>
   </div>
 
-  <div class="modal-backdrop" id="quizModal" aria-hidden="true">
-    <div class="quiz-card" role="dialog" aria-modal="true">
-      <button class="modal-close-btn" id="quizClose" aria-label="Cerrar test">✕</button>
-      <div class="quiz-step active" id="quizStep1">
-        <h3>Paso 1: ¿Cómo describirías tu piel?</h3>
-        <p class="subtitle">Selecciona la opción que mejor represente tu estado diario:</p>
-        <div class="quiz-options-grid">
-          <button class="quiz-opt-btn" onclick="selectQuizType('grasa')">
-            <strong>Mixta a Grasa</strong><span>Brillo en zona T y poros dilatados.</span>
-          </button>
-          <button class="quiz-opt-btn" onclick="selectQuizType('seca')">
-            <strong>Seca a Deshidratada</strong><span>Sensación tirante y falta de luminosidad.</span>
-          </button>
-          <button class="quiz-opt-btn" onclick="selectQuizType('sensible')">
-            <strong>Sensible / Reactiva</strong><span>Se enrojece con facilidad.</span>
-          </button>
-          <button class="quiz-opt-btn" onclick="selectQuizType('normal')">
-            <strong>Equilibrada / Normal</strong><span>Busca mantener hidratación y prevenir edad.</span>
-          </button>
-        </div>
-      </div>
-      <div class="quiz-step" id="quizStep2">
-        <h3>Paso 2: ¿Cuál es tu objetivo prioritario?</h3>
-        <p class="subtitle">¿Qué te gustaría transformar en tu piel?</p>
-        <div class="quiz-options-grid">
-          <button class="quiz-opt-btn" onclick="selectQuizGoal('manchas')"><strong>Manchas & Tono</strong></button>
-          <button class="quiz-opt-btn" onclick="selectQuizGoal('rojeces')"><strong>Calmar Rojeces</strong></button>
-          <button class="quiz-opt-btn" onclick="selectQuizGoal('antiedad')"><strong>Firmeza & Poros</strong></button>
-          <button class="quiz-opt-btn" onclick="selectQuizGoal('hidratacion')"><strong>Glass Skin</strong></button>
-        </div>
-      </div>
-      <div class="quiz-step" id="quizStep3">
-        <h3>¡Tu Diagnóstico de Belleza está Listo!</h3>
-        <div id="quizResultsContainer"></div>
+  <!-- ROUTINE QUIZ MODAL -->
+<div class="modal-backdrop" id="quizModal" aria-hidden="true">
+  <div class="quiz-card" role="dialog" aria-modal="true">
+    <button class="modal-close-btn" id="quizClose" aria-label="Cerrar test">&#x2715;</button>
+
+    <!-- Progress Bar -->
+    <div class="quiz-progress-wrap">
+      <span id="quizProgressLabel">Paso 1 de 5</span>
+      <div class="quiz-progress-track">
+        <div class="quiz-progress-fill" id="quizProgressBar"></div>
       </div>
     </div>
+
+    <!-- Step 1: Tipo de piel -->
+    <div class="quiz-step active" id="quizStep1">
+      <h3>Paso 1: &iquest;C&oacute;mo es tu piel?</h3>
+      <p class="subtitle">Selecciona el tipo que mejor define tu piel al despertar, sin productos:</p>
+      <div class="quiz-options-grid">
+        <button class="quiz-opt-btn" onclick="selectQuizType('grasa')">
+          <strong>Mixta a Grasa</strong>
+          <span>Brillo en zona T, poros visibles y tendencia a puntos negros o granos.</span>
+        </button>
+        <button class="quiz-opt-btn" onclick="selectQuizType('mixta')">
+          <strong>Mixta Equilibrada</strong>
+          <span>Zona T algo brillante pero mejillas normales o secas.</span>
+        </button>
+        <button class="quiz-opt-btn" onclick="selectQuizType('seca')">
+          <strong>Seca / Deshidratada</strong>
+          <span>Sensaci&oacute;n tirante, opacidad, descamaci&oacute;n o aspecto apagado.</span>
+        </button>
+        <button class="quiz-opt-btn" onclick="selectQuizType('sensible')">
+          <strong>Sensible / Reactiva</strong>
+          <span>Se enrojece, pica o reacciona f&aacute;cilmente a cambios o productos nuevos.</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Step 2: Sensibilidad -->
+    <div class="quiz-step" id="quizStep2">
+      <h3>Paso 2: &iquest;Qu&eacute; tan sensible es tu piel?</h3>
+      <p class="subtitle">Esto nos ayuda a elegir activos que tu barrera cut&aacute;nea pueda tolerar bien:</p>
+      <div class="quiz-options-grid">
+        <button class="quiz-opt-btn" onclick="selectQuizSensitivity('alta')">
+          <strong>Muy Sensible</strong>
+          <span>Cualquier activo nuevo le genera ardor, enrojecimiento o granitos. Prefiero f&oacute;rmulas ultra suaves.</span>
+        </button>
+        <button class="quiz-opt-btn" onclick="selectQuizSensitivity('moderada')">
+          <strong>Moderada</strong>
+          <span>Tolera bien la mayor&iacute;a de productos pero reacciona ante concentraciones altas.</span>
+        </button>
+        <button class="quiz-opt-btn" onclick="selectQuizSensitivity('baja')">
+          <strong>Resistente</strong>
+          <span>Raramente reacciona. Puede tolerar activos potentes como retinol o vitamina C pura.</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Step 3: Objetivo -->
+    <div class="quiz-step" id="quizStep3">
+      <h3>Paso 3: &iquest;Cu&aacute;l es tu prioridad?</h3>
+      <p class="subtitle">&iquest;Qu&eacute; transformaci&oacute;n cut&aacute;nea quieres ver primero?</p>
+      <div class="quiz-options-grid">
+        <button class="quiz-opt-btn" onclick="selectQuizGoal('manchas')">
+          <strong>&#x2728; Manchas &amp; Luminosidad</strong>
+          <span>Atenuar marcas de acn&eacute;, manchas de sol o tono desigual. Quiero una piel m&aacute;s uniforme y brillante.</span>
+        </button>
+        <button class="quiz-opt-btn" onclick="selectQuizGoal('rojeces')">
+          <strong>&#x1F33F; Calmar Rojeces &amp; Brotes</strong>
+          <span>Desinflamar, calmar la reactividad y reconstruir la barrera da&ntilde;ada.</span>
+        </button>
+        <button class="quiz-opt-btn" onclick="selectQuizGoal('antiedad')">
+          <strong>&#x23F3; Firmeza &amp; Antiedad</strong>
+          <span>Reducir l&iacute;neas finas, afinar textura y aportar densidad y elasticidad.</span>
+        </button>
+        <button class="quiz-opt-btn" onclick="selectQuizGoal('hidratacion')">
+          <strong>&#x1F4A7; Glass Skin / Hidrataci&oacute;n</strong>
+          <span>Piel rellena, jugosa y barrera cut&aacute;nea s&oacute;lida. Efecto &ldquo;piel de cristal&rdquo;.</span>
+        </button>
+        <button class="quiz-opt-btn" onclick="selectQuizGoal('poros')">
+          <strong>&#x1F52C; Poros &amp; Textura</strong>
+          <span>Minimizar poros visibles, controlar sebo y obtener una superficie lisa y refinada.</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Step 4: Estilo de vida -->
+    <div class="quiz-step" id="quizStep4">
+      <h3>Paso 4: &iquest;Cu&aacute;l es tu rutina de vida?</h3>
+      <p class="subtitle">Tu entorno y h&aacute;bitos diarios influyen en qu&eacute; productos ser&aacute;n m&aacute;s efectivos para ti:</p>
+      <div class="quiz-options-grid">
+        <button class="quiz-opt-btn" onclick="selectQuizLifestyle('sol')">
+          <strong>&#x2600;&#xFE0F; Exposici&oacute;n Solar Frecuente</strong>
+          <span>Salgo mucho al sol (trabajo, deporte, actividades al aire libre). La fotoprotecci&oacute;n es clave.</span>
+        </button>
+        <button class="quiz-opt-btn" onclick="selectQuizLifestyle('maquillaje')">
+          <strong>&#x1F484; Uso Maquillaje a Diario</strong>
+          <span>Llevo base, corrector u otros productos de cobertura la mayor&iacute;a de d&iacute;as.</span>
+        </button>
+        <button class="quiz-opt-btn" onclick="selectQuizLifestyle('noche')">
+          <strong>&#x1F319; Enfoque en Noche / Recuperaci&oacute;n</strong>
+          <span>Mi momento favorito es la rutina nocturna. Busco activos de reparaci&oacute;n mientras duermo.</span>
+        </button>
+        <button class="quiz-opt-btn" onclick="selectQuizLifestyle('minimalista')">
+          <strong>&#x26A1; Rutina Minimalista</strong>
+          <span>Prefiero pocos pasos pero muy efectivos. No tengo mucho tiempo.</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Step 5: Edad de la piel -->
+    <div class="quiz-step" id="quizStep5">
+      <h3>Paso 5: &iquest;Cu&aacute;l es tu rango de edad?</h3>
+      <p class="subtitle">La edad biol&oacute;gica de la piel determina qu&eacute; activos son prioritarios en tu protocolo:</p>
+      <div class="quiz-options-grid">
+        <button class="quiz-opt-btn" onclick="selectQuizSkinAge('teen')">
+          <strong>15 &ndash; 25 a&ntilde;os</strong>
+          <span>Piel joven: objetivo principal es prevenci&oacute;n, control de granos y base protectora sana.</span>
+        </button>
+        <button class="quiz-opt-btn" onclick="selectQuizSkinAge('adulta')">
+          <strong>26 &ndash; 40 a&ntilde;os</strong>
+          <span>Piel adulta: primeros signos de envejecimiento, manchas y necesidad de activos m&aacute;s potentes.</span>
+        </button>
+        <button class="quiz-opt-btn" onclick="selectQuizSkinAge('madura')">
+          <strong>40+ a&ntilde;os</strong>
+          <span>Piel madura: p&eacute;rdida de firmeza, arrugas, manchas intensas. Necesita regeneraci&oacute;n profunda.</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Step 6: Results -->
+    <div class="quiz-step" id="quizStep6">
+      <div id="quizResultsContainer"></div>
+    </div>
+
   </div>
+</div>
 
   <!-- SLIDE-OUT CART DRAWER (Screenshot 4) -->
   <div class="cart-drawer-backdrop" id="cartDrawerBackdrop" aria-hidden="true">
@@ -582,7 +681,7 @@
     </div>
   </footer>
 
-  <script src="app.js?v=21"></script>
+  <script src="app.js?v=23"></script>
   <script>
     function goToBrand(b) {
       sessionStorage.setItem('filterBrand', b);
